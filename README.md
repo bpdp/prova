@@ -1,7 +1,7 @@
 Prova rule language (http://www.prova.ws)
 =========================================
 
-* September 2014: This fork is basically the same as Prova 3.2.1, but but uses [Gradle](http://www.gradle.org) for automation tool. Prova now also uses newer / newest libraries since version 3.2.1 could be problematic in library dependency management when embedded into current software development project (not to mention that it also difficult to be improved), I've adjusted the source code for those two purposes.
+* September 2014: This fork is basically the same as Prova 3.2.1, but uses [Gradle](http://www.gradle.org) for automation tool. Prova now also uses newer / newest libraries since version 3.2.1 could be problematic in library dependency management when embedded into current software development project (not to mention that it also difficult to be improved), I've adjusted the source code for those two purposes.
 
 Maintainer for this version is [Bambang Purnomosidi D. P.](http://bpdp.name).
 
