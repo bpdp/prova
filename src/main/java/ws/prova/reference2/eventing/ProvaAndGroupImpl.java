@@ -11,7 +11,8 @@ import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import ws.prova.agent2.ProvaReagent;
 import ws.prova.kernel2.ProvaConstant;
@@ -26,7 +27,7 @@ import ws.prova.reference2.messaging.where.WhereNode;
 
 public class ProvaAndGroupImpl extends ProvaBasicGroupImpl {
 
-	private final static Logger log = Logger.getLogger("prova.eventing");
+	private final static Logger log = LogManager.getLogger("prova.eventing");
 	
 	private class MetaVars {
 		// Bound metadata variables

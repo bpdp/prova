@@ -1,8 +1,8 @@
 // $ANTLR 3.4 C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g 2013-01-02 16:17:20
 
-       package ws.prova.parser;
+package ws.prova.parser;
 
-
+//import org.antlr.v4.runtime.*;
 import org.antlr.runtime.*;
 import java.util.Stack;
 import java.util.List;
@@ -97,6 +97,7 @@ public class Prova2Lexer extends Lexer {
     public Prova2Lexer(CharStream input, RecognizerSharedState state) {
         super(input,state);
     }
+
     public String getGrammarFileName() { return "C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g"; }
 
     // $ANTLR start "BAR"

@@ -1,9 +1,9 @@
 package ws.prova.parser2;
 
 import org.antlr.runtime.Token;
-import org.antlr.runtime.tree.CommonTree;
+import org.antlr.runtime.CommonToken;
 
-public class ProvaAST extends CommonTree {
+public class ProvaAST extends CommonToken {
 
 	private int line = 0;
  	

@@ -27,7 +27,9 @@ import java.util.concurrent.locks.ReentrantLock;
 import javax.swing.SwingUtilities;
 
 import org.apache.commons.beanutils.MethodUtils;
-import org.apache.log4j.Logger;
+
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import ws.prova.api2.ProvaCommunicator;
 import ws.prova.api2.ProvaCommunicatorImpl;
@@ -53,7 +55,7 @@ import ws.prova.service.ProvaMiniService;
 @SuppressWarnings("unused")
 public class ProvaReagentImpl implements ProvaReagent {
 
-	private final static Logger log = Logger.getLogger("prova");
+	private final static Logger log = LogManager.getLogger("prova");
 
 	private static final ProvaSolution[] noSolutions = new ProvaSolution[0];
 

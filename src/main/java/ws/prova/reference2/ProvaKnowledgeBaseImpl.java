@@ -13,7 +13,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicLong;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import ws.prova.agent2.ProvaReagent;
 import ws.prova.kernel2.ProvaBuiltin;
@@ -116,7 +117,7 @@ import ws.prova.reference2.cache.ProvaCachedLiteralImpl;
 
 public class ProvaKnowledgeBaseImpl implements ProvaKnowledgeBase {
 
-	private final static Logger log = Logger.getLogger("prova");
+	private final static Logger log = LogManager.getLogger("prova");
 
 	private static final ProvaSolution[] noSolutions = new ProvaSolution[0];
 	

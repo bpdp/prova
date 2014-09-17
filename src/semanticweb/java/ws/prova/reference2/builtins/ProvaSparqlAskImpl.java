@@ -2,7 +2,9 @@ package ws.prova.reference2.builtins;
 
 import java.util.ArrayList;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 import org.openrdf.query.BooleanQuery;
 import org.openrdf.query.QueryEvaluationException;
 import org.openrdf.query.QueryLanguage;
@@ -41,7 +43,7 @@ import ws.prova.kernel2.ProvaPredicate;
  */
 public class ProvaSparqlAskImpl extends ProvaSparqlQueryImpl {
 
-	private static final Logger log = Logger.getLogger(ProvaSparqlAskImpl.class);
+	private static final Logger log = LogManager.getLogger(ProvaSparqlAskImpl.class);
 	
 	public ProvaSparqlAskImpl(ProvaKnowledgeBase kb) {
 		super(kb, "sparql_ask");

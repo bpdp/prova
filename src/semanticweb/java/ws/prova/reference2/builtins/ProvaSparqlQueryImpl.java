@@ -3,7 +3,9 @@ package ws.prova.reference2.builtins;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 import org.openrdf.repository.RepositoryConnection;
 
 import ws.prova.agent2.ProvaReagent;
@@ -33,7 +35,7 @@ import ws.prova.reference2.ProvaRuleImpl;
  * @author Malte Rohde <malte.rohde@inf.fu-berlin.de>
  */
 public abstract class ProvaSparqlQueryImpl extends ProvaBuiltinImpl {
-	private static final Logger log = Logger.getLogger(ProvaSparqlQueryImpl.class);
+	private static final Logger log = LogManager.getLogger(ProvaSparqlQueryImpl.class);
 	private static AtomicInteger nqid = new AtomicInteger(0);
 	
 	public ProvaSparqlQueryImpl(ProvaKnowledgeBase kb, String symbol) {

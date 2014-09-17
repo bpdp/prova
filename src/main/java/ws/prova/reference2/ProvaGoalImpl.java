@@ -6,7 +6,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import ws.prova.kernel2.ProvaConstant;
 import ws.prova.kernel2.ProvaGoal;
@@ -23,7 +24,7 @@ import ws.prova.kernel2.ProvaVariablePtr;
 public class ProvaGoalImpl implements ProvaGoal {
 
 	@SuppressWarnings("unused")
-	private final static Logger log = Logger.getLogger("prova");
+	private final static Logger log = LogManager.getLogger("prova");
 	
 	private ProvaRule query;
 	

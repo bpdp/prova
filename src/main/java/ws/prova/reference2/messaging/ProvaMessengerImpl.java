@@ -20,8 +20,10 @@ import java.util.concurrent.atomic.AtomicLong;
 import org.antlr.runtime.ANTLRInputStream;
 import org.antlr.runtime.CommonTokenStream;
 import org.antlr.runtime.tree.CommonTree;
-import org.apache.commons.lang.time.DateUtils;
-import org.apache.log4j.Logger;
+import org.apache.commons.lang3.time.DateUtils;
+
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import ws.prova.agent2.ProvaReagent;
 import ws.prova.agent2.ProvaThreadpoolEnum;
@@ -69,7 +71,7 @@ public class ProvaMessengerImpl implements ProvaMessenger {
 	private static final ProvaConstantImpl EOF = ProvaConstantImpl
 			.create("eof");
 
-	private final static Logger log = Logger.getLogger("prova");
+	private final static Logger log = LogManager.getLogger("prova");
 
 	private final ProvaReagent prova;
 

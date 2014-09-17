@@ -6,8 +6,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.lang.time.DateUtils;
-import org.apache.log4j.Logger;
+import org.apache.commons.lang3.time.DateUtils;
+
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import ws.prova.agent2.ProvaReagent;
 import ws.prova.eventing.ProvaEventsAccumulator;
@@ -18,7 +20,7 @@ import ws.prova.reference2.messaging.RemoveList;
 
 public class ProvaOrGroupImpl extends ProvaBasicGroupImpl {
 
-	private final static Logger log = Logger.getLogger("prova.eventing");
+	private final static Logger log = LogManager.getLogger("prova.eventing");
 
 	public ProvaOrGroupImpl(String dynamicGroup, String staticGroup) {
 		super(dynamicGroup,staticGroup);

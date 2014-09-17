@@ -2,7 +2,9 @@ package ws.prova.reference2.builtins;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 import org.openrdf.repository.Repository;
 import org.openrdf.repository.RepositoryConnection;
 import org.openrdf.repository.RepositoryException;
@@ -39,7 +41,7 @@ import ws.prova.reference2.ProvaConstantImpl;
  * @author Malte Rohde <malte.rohde@inf.fu-berlin.de>
  */
 public class ProvaSparqlConnectImpl extends ProvaBuiltinImpl {
-	private static final Logger log = Logger.getLogger(ProvaSparqlConnectImpl.class);
+	private static final Logger log = LogManager.getLogger(ProvaSparqlConnectImpl.class);
 	
 	public ProvaSparqlConnectImpl(ProvaKnowledgeBase kb) {
 		super(kb, "sparql_connect");

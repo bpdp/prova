@@ -8,7 +8,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.locks.ReentrantLock;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import ws.prova.kernel2.ProvaConstant;
 import ws.prova.kernel2.ProvaKnowledgeBase;
@@ -26,7 +27,7 @@ import ws.prova.reference2.ProvaUnificationImpl;
 
 public class ProvaWorkflowsImpl implements ProvaWorkflows {
 
-	private final static Logger log = Logger.getLogger("prova");
+	private final static Logger log = LogManager.getLogger("prova");
 
 	private ProvaKnowledgeBase kb;
 

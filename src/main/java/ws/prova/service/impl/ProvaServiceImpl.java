@@ -11,7 +11,8 @@ import java.util.concurrent.ConcurrentMap;
 import java.io.BufferedReader;
 import java.io.PrintWriter;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import ws.prova.api2.ProvaCommunicator;
 import ws.prova.api2.ProvaCommunicatorImpl;
@@ -28,7 +29,7 @@ import ws.prova.service.ProvaService;
  */
 public class ProvaServiceImpl implements ProvaService {
 
-	private final static Logger log = Logger.getLogger("service");
+	private final static Logger log = LogManager.getLogger("service");
 
 	private String id;
 	

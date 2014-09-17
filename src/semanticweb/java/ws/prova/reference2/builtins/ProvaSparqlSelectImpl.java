@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
 import org.openrdf.query.Binding;
 import org.openrdf.query.QueryEvaluationException;
 import org.openrdf.query.QueryLanguage;
@@ -47,7 +49,7 @@ import ws.prova.reference2.ProvaConstantImpl;
  * @author Malte Rohde <malte.rohde@inf.fu-berlin.de>
  */
 public class ProvaSparqlSelectImpl extends ProvaSparqlQueryImpl {
-	private static final Logger log = Logger.getLogger(ProvaSparqlSelectImpl.class);
+	private static final Logger log = LogManager.getLogger(ProvaSparqlSelectImpl.class);
 	
 	public ProvaSparqlSelectImpl(ProvaKnowledgeBase kb) {
 		super(kb, "sparql_select");

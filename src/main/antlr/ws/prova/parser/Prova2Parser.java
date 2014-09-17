@@ -1,17 +1,18 @@
 // $ANTLR 3.4 C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g 2013-01-02 16:17:20
 
-       package ws.prova.parser;
+package ws.prova.parser;
 
-	import ws.prova.parser2.ProvaAST;
-	import ws.prova.parser2.ProvaErrorReporter;
+import ws.prova.parser2.ProvaAST;
+import ws.prova.parser2.ProvaErrorReporter;
 
-
+//import org.antlr.v4.runtime.*;
 import org.antlr.runtime.*;
+import org.antlr.runtime.tree.*;
 import java.util.Stack;
 import java.util.List;
 import java.util.ArrayList;
 
-import org.antlr.runtime.tree.*;
+import org.antlr.v4.runtime.tree.*;
 
 
 @SuppressWarnings({"all", "warnings", "unchecked"})

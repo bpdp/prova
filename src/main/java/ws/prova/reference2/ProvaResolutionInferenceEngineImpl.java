@@ -5,7 +5,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Stack;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import ws.prova.agent2.ProvaReagent;
 import ws.prova.kernel2.ProvaBuiltin;
@@ -26,7 +27,7 @@ import ws.prova.reference2.messaging.ProvaMessengerImpl;
 
 public class ProvaResolutionInferenceEngineImpl implements ProvaResolutionInferenceEngine {
 
-	private final static Logger log = Logger.getLogger("prova");
+	private final static Logger log = LogManager.getLogger("prova");
 
 	private ProvaKnowledgeBase kb;
 

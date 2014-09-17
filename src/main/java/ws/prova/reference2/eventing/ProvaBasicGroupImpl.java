@@ -11,7 +11,8 @@ import java.util.Set;
 import java.util.Map.Entry;
 import java.util.concurrent.ScheduledFuture;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import ws.prova.agent2.ProvaReagent;
 import ws.prova.agent2.ProvaThreadpoolEnum;
@@ -31,7 +32,7 @@ import ws.prova.reference2.messaging.where.WhereNode;
 
 public class ProvaBasicGroupImpl implements ProvaGroup {
 
-	private final static Logger log = Logger.getLogger("prova.eventing");
+	private final static Logger log = LogManager.getLogger("prova.eventing");
 
 	protected String dynamicGroup;
 	
