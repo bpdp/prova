@@ -39,7 +39,6 @@ public interface ProvaReagent {
 	public void shutdown();
 
 	public List<ProvaSolution[]> getInitializationSolutions();
-
 	public ProvaWorkflows getWorkflows();
 
 	public void unconsultSync(String src);

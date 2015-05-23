@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: sesame-http-server-spring-2.7.13">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openrdf.sesame/sesame-http-server-spring/2.7.13/e6a20a0f6043a940fc9cf04c5454ae821053ea4f/sesame-http-server-spring-2.7.13.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openrdf.sesame/sesame-http-server-spring/2.7.13/88a1b80de73a432cd6c5ab7f074b47657d56dcdf/sesame-http-server-spring-2.7.13-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

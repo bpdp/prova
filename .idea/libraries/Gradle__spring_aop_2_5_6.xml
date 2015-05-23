@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: spring-aop-2.5.6">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/2.5.6/spring-aop-2.5.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

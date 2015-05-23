@@ -17,4 +17,8 @@ test-results
 test-tmp
 *.class
 .nb-gradle
-/.nb-gradle/private/
+./nb-gradle/private/
+*.iml
+.idea/
+*.ipr
+*.iws
