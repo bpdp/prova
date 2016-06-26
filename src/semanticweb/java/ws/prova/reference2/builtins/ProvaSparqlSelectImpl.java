@@ -7,12 +7,24 @@ import java.util.List;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+/*
+ * Original: Sesame 2.x
 import org.openrdf.query.Binding;
 import org.openrdf.query.QueryEvaluationException;
 import org.openrdf.query.QueryLanguage;
 import org.openrdf.query.TupleQuery;
 import org.openrdf.query.TupleQueryResult;
 import org.openrdf.repository.RepositoryConnection;
+
+Below, changed to RDF4J
+*/
+
+import org.eclipse.rdf4j.query.Binding;
+import org.eclipse.rdf4j.query.QueryEvaluationException;
+import org.eclipse.rdf4j.query.QueryLanguage;
+import org.eclipse.rdf4j.query.TupleQuery;
+import org.eclipse.rdf4j.query.TupleQueryResult;
+import org.eclipse.rdf4j.repository.RepositoryConnection;
 
 import ws.prova.kernel2.ProvaConstant;
 import ws.prova.kernel2.ProvaKnowledgeBase;

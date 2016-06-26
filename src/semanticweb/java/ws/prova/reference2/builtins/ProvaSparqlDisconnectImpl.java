@@ -5,8 +5,13 @@ import java.util.List;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+/*
 import org.openrdf.repository.RepositoryConnection;
 import org.openrdf.repository.RepositoryException;
+*/
+
+import org.eclipse.rdf4j.repository.RepositoryConnection;
+import org.eclipse.rdf4j.repository.RepositoryException;
 
 import ws.prova.agent2.ProvaReagent;
 import ws.prova.kernel2.ProvaConstant;

@@ -5,10 +5,17 @@ import java.util.ArrayList;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+/* sesame 2.x
 import org.openrdf.query.BooleanQuery;
 import org.openrdf.query.QueryEvaluationException;
 import org.openrdf.query.QueryLanguage;
 import org.openrdf.repository.RepositoryConnection;
+*/
+
+import org.eclipse.rdf4j.query.BooleanQuery;
+import org.eclipse.rdf4j.query.QueryEvaluationException;
+import org.eclipse.rdf4j.query.QueryLanguage;
+import org.eclipse.rdf4j.repository.RepositoryConnection;
 
 import ws.prova.kernel2.ProvaConstant;
 import ws.prova.kernel2.ProvaKnowledgeBase;
