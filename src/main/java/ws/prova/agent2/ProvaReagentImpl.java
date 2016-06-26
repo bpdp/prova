@@ -91,9 +91,7 @@ public class ProvaReagentImpl implements ProvaReagent {
 
     private boolean allowedShutdown = true;
 
-    public ProvaReagentImpl(ProvaCommunicator communicator, ProvaMiniService service, String agent,
-            String port, String[] prot, Object rules, boolean async,
-            ProvaAgent esb, Map<String, Object> globals) {
+    public ProvaReagentImpl(ProvaCommunicator communicator, ProvaMiniService service, String agent, String port, String[] prot, Object rules, boolean async, ProvaAgent esb, Map<String, Object> globals) {
         this.agent = agent;
         this.port = port;
         // this.queue = queue;
@@ -115,17 +113,15 @@ public class ProvaReagentImpl implements ProvaReagent {
                 th.setDaemon(true);
                 return th;
             }
-            
+
         });
-        this.pool = 
-//          Executors.newFixedThreadPool(10);
-            new ThreadPoolExecutor(10, 10,
-                0L, TimeUnit.MILLISECONDS, new ArrayBlockingQueueWithPut<Runnable>(81920));
+        this.pool =
+            // Executors.newFixedThreadPool(10);
+            new ThreadPoolExecutor(10, 10, 0L, TimeUnit.MILLISECONDS, new ArrayBlockingQueueWithPut<Runnable>(81920));
         for (int i = 0; i < partitionedPool.length; i++) {
             final int index = i;
             this.partitionedPool[i] =
-                new ThreadPoolExecutor(1, 1,
-                        0L, TimeUnit.MILLISECONDS, new ArrayBlockingQueueWithPut<Runnable>(81920),
+                new ThreadPoolExecutor(1, 1, 0L, TimeUnit.MILLISECONDS, new ArrayBlockingQueueWithPut<Runnable>(81920),
 //              Executors.newFixedThreadPool(1,
                     new ThreadFactory() {
 
@@ -194,13 +190,11 @@ public class ProvaReagentImpl implements ProvaReagent {
         // consultSync(in,"shutdown",null);
     }
 
-    public List<ProvaSolution[]> consultSyncInternal(BufferedReader in,
-            String key, Object[] objects) {
+    public List<ProvaSolution[]> consultSyncInternal(BufferedReader in, String key, Object[] objects) {
         return kb.consultSyncInternal(this, in, key, objects);
     }
 
-    public List<ProvaSolution[]> consultSyncInternal(String src, String key,
-            Object[] objects) {
+    public List<ProvaSolution[]> consultSyncInternal(String src, String key, Object[] objects) {
         return kb.consultSyncInternal(this, src, key, objects);
     }
 
@@ -213,8 +207,7 @@ public class ProvaReagentImpl implements ProvaReagent {
                         objects);
             }
         };
-        FutureTask<List<ProvaSolution[]>> ftask = new FutureTask<List<ProvaSolution[]>>(
-                task);
+        FutureTask<List<ProvaSolution[]>> ftask = new FutureTask<List<ProvaSolution[]>>(task);
         Future<?> future = executor.submit(ftask);
         return ftask;
     }
