@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 public interface ProvaStateContainer extends Serializable {
 
-	String getQueryId();
+    String getQueryId();
 
-	Object retrieveStateObject(String key, ProvaStateObjectFactory factory);
+    Object retrieveStateObject(String key, ProvaStateObjectFactory factory);
 
 }

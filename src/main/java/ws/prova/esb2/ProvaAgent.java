@@ -12,10 +12,10 @@ import ws.prova.kernel2.ProvaList;
  */
 public interface ProvaAgent {
 
-	public void receive( ProvaList terms ) throws Exception;
+    public void receive( ProvaList terms ) throws Exception;
 
-	public void send(String dest, ProvaList terms) throws Exception;
+    public void send(String dest, ProvaList terms) throws Exception;
 
-	public String getAgentName();
+    public String getAgentName();
 
 }

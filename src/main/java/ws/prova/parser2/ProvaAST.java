@@ -5,32 +5,32 @@ import org.antlr.runtime.CommonToken;
 
 public class ProvaAST extends CommonToken {
 
-	private int line = 0;
- 	
+    private int line = 0;
+    
     private int column = 0;
 
     public ProvaAST(Token tok) {
         super(tok);
         if( tok!=null ) {
-        	line=tok.getLine();
-        	column=tok.getCharPositionInLine();
+            line=tok.getLine();
+            column=tok.getCharPositionInLine();
         }
     }
     
     public int getLine() {
-    	return line;
+        return line;
     }
     
     public int getColumn() {
-    	return column;
+        return column;
     }
 
-	public void setLine(int line) {
-		this.line = line;
-	}
+    public void setLine(int line) {
+        this.line = line;
+    }
 
-	public void setColumn(int column) {
-		this.column = column;
-	}
+    public void setColumn(int column) {
+        this.column = column;
+    }
 
 }

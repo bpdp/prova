@@ -5,9 +5,9 @@ import java.util.List;
 
 public class IBMPortfolio extends Portfolio {
 
-	private static final long serialVersionUID = -7207695862049184219L;
+    private static final long serialVersionUID = -7207695862049184219L;
 
-	private Object value;
+    private Object value;
 
     public IBMPortfolio() {
     }
@@ -17,15 +17,15 @@ public class IBMPortfolio extends Portfolio {
     }
 
     public Object[] getObjectArray() {
-    	Object[] objects = new Object[]{"A",new Double(3.14),new Integer(4)}; 
+        Object[] objects = new Object[]{"A",new Double(3.14),new Integer(4)}; 
         return objects;
     }
 
     public List<Object> getJavaList() {
-    	List<Object> list = new ArrayList<Object>(3);
-    	list.add("A");
-    	list.add(new Double(3.14));
-    	list.add(new Integer(4));
+        List<Object> list = new ArrayList<Object>(3);
+        list.add("A");
+        list.add(new Double(3.14));
+        list.add(new Integer(4));
         return list;
     }
 

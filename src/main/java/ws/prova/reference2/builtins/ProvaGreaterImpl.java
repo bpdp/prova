@@ -15,30 +15,30 @@ import ws.prova.agent2.ProvaReagent;
 
 public class ProvaGreaterImpl extends ProvaBuiltinImpl {
 
-	public ProvaGreaterImpl(ProvaKnowledgeBase kb) {
-		super(kb,"gt");
-	}
+    public ProvaGreaterImpl(ProvaKnowledgeBase kb) {
+        super(kb,"gt");
+    }
 
-	@Override
-	public boolean process(ProvaReagent prova, ProvaDerivationNode node,
-			ProvaGoal goal, List<ProvaLiteral> newLiterals, ProvaRule query) {
-		ProvaLiteral literal = goal.getGoal();
-		List<ProvaVariable> variables = query.getVariables();
-		ProvaList terms = (ProvaList) literal.getTerms().cloneWithVariables(variables);
-		ProvaObject[] data = terms.getFixed();
-		if( data.length<2 
-				|| !(data[0] instanceof ProvaConstant) 
-				|| !(((ProvaConstant) data[0]).getObject() instanceof Number) )
-			return false;
-		double left = ((Number) ((ProvaConstant) data[0]).getObject()).doubleValue();
-		for( int i=1; i<data.length; i++ ) {
-			if( !(((ProvaConstant) data[i]).getObject() instanceof Number) )
-				return false;
-			double right = ((Number) ((ProvaConstant) data[i]).getObject()).doubleValue();
-			if( left<=right )
-				return false;
-		}
-		return true;
-	}
+    @Override
+    public boolean process(ProvaReagent prova, ProvaDerivationNode node,
+            ProvaGoal goal, List<ProvaLiteral> newLiterals, ProvaRule query) {
+        ProvaLiteral literal = goal.getGoal();
+        List<ProvaVariable> variables = query.getVariables();
+        ProvaList terms = (ProvaList) literal.getTerms().cloneWithVariables(variables);
+        ProvaObject[] data = terms.getFixed();
+        if( data.length<2 
+                || !(data[0] instanceof ProvaConstant) 
+                || !(((ProvaConstant) data[0]).getObject() instanceof Number) )
+            return false;
+        double left = ((Number) ((ProvaConstant) data[0]).getObject()).doubleValue();
+        for( int i=1; i<data.length; i++ ) {
+            if( !(((ProvaConstant) data[i]).getObject() instanceof Number) )
+                return false;
+            double right = ((Number) ((ProvaConstant) data[i]).getObject()).doubleValue();
+            if( left<=right )
+                return false;
+        }
+        return true;
+    }
 
 }

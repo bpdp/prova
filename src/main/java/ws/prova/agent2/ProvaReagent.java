@@ -15,45 +15,45 @@ import ws.prova.reference2.ProvaSwingAdaptor;
 
 public interface ProvaReagent {
 
-	public void setPrintWriter(PrintWriter printWriter);
+    public void setPrintWriter(PrintWriter printWriter);
 
-	public Future<List<ProvaSolution[]>> consultSync(final String src, final String key, final Object[] objects);
+    public Future<List<ProvaSolution[]>> consultSync(final String src, final String key, final Object[] objects);
 
-	public Future<List<ProvaSolution[]>> consultSync(final BufferedReader in,
-			final String key, final Object[] objects);
+    public Future<List<ProvaSolution[]>> consultSync(final BufferedReader in,
+            final String key, final Object[] objects);
 
-	public ProvaMessenger getMessenger();
+    public ProvaMessenger getMessenger();
 
-	public ProvaKnowledgeBase getKb();
+    public ProvaKnowledgeBase getKb();
 
-	public void consultAsync(final String src, final String key, final Object[] objects);
+    public void consultAsync(final String src, final String key, final Object[] objects);
 
-	public void consultAsync(final BufferedReader in, final String key, final Object[] objects);
+    public void consultAsync(final BufferedReader in, final String key, final Object[] objects);
 
-	public void submitAsync(final long partition, final ProvaRule goal, final ProvaThreadpoolEnum targetPool);
+    public void submitAsync(final long partition, final ProvaRule goal, final ProvaThreadpoolEnum targetPool);
 
-	public boolean spawn(final ProvaList terms);
+    public boolean spawn(final ProvaList terms);
 
-	public String getAgent();
+    public String getAgent();
 
-	public void shutdown();
+    public void shutdown();
 
-	public List<ProvaSolution[]> getInitializationSolutions();
-	public ProvaWorkflows getWorkflows();
+    public List<ProvaSolution[]> getInitializationSolutions();
+    public ProvaWorkflows getWorkflows();
 
-	public void unconsultSync(String src);
+    public void unconsultSync(String src);
 
-	public ProvaSwingAdaptor getSwingAdaptor();
+    public ProvaSwingAdaptor getSwingAdaptor();
 
-	public void executeTask(long partition, Runnable task,
-			ProvaThreadpoolEnum threadPool);
+    public void executeTask(long partition, Runnable task,
+            ProvaThreadpoolEnum threadPool);
 
-	public boolean canShutdown();
+    public boolean canShutdown();
 
-	public void setAllowedShutdown(boolean allowedShutdown);
+    public void setAllowedShutdown(boolean allowedShutdown);
 
-	public boolean isInPartitionThread(long partition);
+    public boolean isInPartitionThread(long partition);
 
-	public void setGlobalConstant(String name, Object value);
+    public void setGlobalConstant(String name, Object value);
 
 }

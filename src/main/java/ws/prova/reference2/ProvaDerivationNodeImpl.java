@@ -178,14 +178,14 @@ public class ProvaDerivationNodeImpl implements ProvaDerivationNode {
         this.cutPredicate = cutPredicate;
     }
 
-	/**
-	 * Set the parent node.
-	 *
-	 * @param n a node
-	 */
+    /**
+     * Set the parent node.
+     *
+     * @param n a node
+     */
     @Override
-	public void setParent(ProvaDerivationNode n) {
-		parent = n;
-	}
+    public void setParent(ProvaDerivationNode n) {
+        parent = n;
+    }
 
 }

@@ -16,26 +16,26 @@ import ws.prova.kernel2.ProvaVariable;
 
 public class ProvaRetractImpl extends ProvaBuiltinImpl {
 
-	public ProvaRetractImpl(ProvaKnowledgeBase kb) {
-		super(kb, "retract");
-	}
+    public ProvaRetractImpl(ProvaKnowledgeBase kb) {
+        super(kb, "retract");
+    }
 
-	@Override
-	public boolean process(ProvaReagent prova, ProvaDerivationNode node,
-			ProvaGoal goal, List<ProvaLiteral> newLiterals, ProvaRule query) {
-		ProvaLiteral literal = goal.getGoal();
-		// Clone variables since unification is used in this method
-		List<ProvaVariable> variables = query.cloneVariables();
-		ProvaList terms = (ProvaList) literal.getTerms().cloneWithVariables(variables);
-		ProvaObject[] data = terms.getFixed();
-		if( data.length!=1 || !(data[0] instanceof ProvaList) )
-			return false;
-		data = ((ProvaList) data[0]).getFixed();
-		String symbol = ((ProvaConstant) data[0]).getObject().toString();
-		ProvaRuleSet clauses = kb.getPredicates(symbol,data.length-1);
-		// TODO: Verify that all cases are covered
-		boolean retracted = clauses.removeClausesByMatch(kb,data);
-		return retracted;
-	}
+    @Override
+    public boolean process(ProvaReagent prova, ProvaDerivationNode node,
+            ProvaGoal goal, List<ProvaLiteral> newLiterals, ProvaRule query) {
+        ProvaLiteral literal = goal.getGoal();
+        // Clone variables since unification is used in this method
+        List<ProvaVariable> variables = query.cloneVariables();
+        ProvaList terms = (ProvaList) literal.getTerms().cloneWithVariables(variables);
+        ProvaObject[] data = terms.getFixed();
+        if( data.length!=1 || !(data[0] instanceof ProvaList) )
+            return false;
+        data = ((ProvaList) data[0]).getFixed();
+        String symbol = ((ProvaConstant) data[0]).getObject().toString();
+        ProvaRuleSet clauses = kb.getPredicates(symbol,data.length-1);
+        // TODO: Verify that all cases are covered
+        boolean retracted = clauses.removeClausesByMatch(kb,data);
+        return retracted;
+    }
 
 }

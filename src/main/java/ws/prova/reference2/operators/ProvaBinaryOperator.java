@@ -9,6 +9,6 @@ import ws.prova.kernel2.ProvaObject;
 
 public interface ProvaBinaryOperator {
 
-	public boolean evaluate(ProvaKnowledgeBase kb, List<ProvaLiteral> newLiterals, ProvaObject o1, ProvaComputable a2);
+    public boolean evaluate(ProvaKnowledgeBase kb, List<ProvaLiteral> newLiterals, ProvaObject o1, ProvaComputable a2);
 
 }

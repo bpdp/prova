@@ -5,12 +5,12 @@ import ws.prova.kernel2.ProvaLiteral;
 
 public interface ProvaCachedLiteral extends ProvaLiteral {
 
-	public void setGoal(ProvaGoal provaGoal);
+    public void setGoal(ProvaGoal provaGoal);
 
-	public ProvaCacheState getCacheState();
+    public ProvaCacheState getCacheState();
 
-	public ProvaLocalAnswers getAnswers();
+    public ProvaLocalAnswers getAnswers();
 
-	public ProvaGoal getGoal();
+    public ProvaGoal getGoal();
 
 }

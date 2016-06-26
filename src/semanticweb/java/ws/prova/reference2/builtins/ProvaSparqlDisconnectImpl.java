@@ -40,55 +40,55 @@ import ws.prova.kernel2.ProvaVariablePtr;
  */
 public class ProvaSparqlDisconnectImpl extends ProvaBuiltinImpl {
 
-	private static final Logger log = LogManager.getLogger(ProvaSparqlDisconnectImpl.class);
-	
-	public ProvaSparqlDisconnectImpl(ProvaKnowledgeBase kb) {
-		super(kb, "sparql_disconnect");
-	}
-	
-	@Override
-	public int getArity() {
-		return 1;
-	}
+    private static final Logger log = LogManager.getLogger(ProvaSparqlDisconnectImpl.class);
+    
+    public ProvaSparqlDisconnectImpl(ProvaKnowledgeBase kb) {
+        super(kb, "sparql_disconnect");
+    }
+    
+    @Override
+    public int getArity() {
+        return 1;
+    }
 
-	@Override
-	public boolean process(ProvaReagent prova, ProvaDerivationNode node,
-			ProvaGoal goal, List<ProvaLiteral> newLiterals, ProvaRule query) {
-		List<ProvaVariable> variables = query.getVariables();
-		ProvaLiteral literal = goal.getGoal();
-		ProvaList terms = (ProvaList) literal.getTerms();
-		ProvaObject[] data = terms.getFixed();
-		
-		if(data.length != 1) {
-			log.error("Syntax error. Need one term.");
-			return false;
-		}
-		
-		ProvaObject data0 = data[0];
-		if(data0 instanceof ProvaVariablePtr) {
-			ProvaVariablePtr varPtr = (ProvaVariablePtr) data0;
-			data0 = variables.get(varPtr.getIndex()).getRecursivelyAssigned();
-		}
-		
-		if(!(data0 instanceof ProvaConstant)) {
-			log.error("Binding error. First term must be constant.");
-			return false;
-		}
-		
-		Object obj = ((ProvaConstant) data0).getObject();
-		if(!(obj instanceof RepositoryConnection)) {
-			log.error("Binding error. First term must be RepositoryConnection.");
-			return false;
-		}
-		
-		// Do the work.
-		try {
-			((RepositoryConnection) obj).close();
-		} catch (RepositoryException e) {
-			log.error("Could not close connection.");
-			return false;
-		}
-		
-		return true;
-	}	
+    @Override
+    public boolean process(ProvaReagent prova, ProvaDerivationNode node,
+            ProvaGoal goal, List<ProvaLiteral> newLiterals, ProvaRule query) {
+        List<ProvaVariable> variables = query.getVariables();
+        ProvaLiteral literal = goal.getGoal();
+        ProvaList terms = (ProvaList) literal.getTerms();
+        ProvaObject[] data = terms.getFixed();
+        
+        if(data.length != 1) {
+            log.error("Syntax error. Need one term.");
+            return false;
+        }
+        
+        ProvaObject data0 = data[0];
+        if(data0 instanceof ProvaVariablePtr) {
+            ProvaVariablePtr varPtr = (ProvaVariablePtr) data0;
+            data0 = variables.get(varPtr.getIndex()).getRecursivelyAssigned();
+        }
+        
+        if(!(data0 instanceof ProvaConstant)) {
+            log.error("Binding error. First term must be constant.");
+            return false;
+        }
+        
+        Object obj = ((ProvaConstant) data0).getObject();
+        if(!(obj instanceof RepositoryConnection)) {
+            log.error("Binding error. First term must be RepositoryConnection.");
+            return false;
+        }
+        
+        // Do the work.
+        try {
+            ((RepositoryConnection) obj).close();
+        } catch (RepositoryException e) {
+            log.error("Could not close connection.");
+            return false;
+        }
+        
+        return true;
+    }   
 }

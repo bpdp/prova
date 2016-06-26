@@ -61,71 +61,71 @@ import ws.prova.reference2.ProvaConstantImpl;
  * @author Malte Rohde <malte.rohde@inf.fu-berlin.de>
  */
 public class ProvaSparqlSelectImpl extends ProvaSparqlQueryImpl {
-	private static final Logger log = LogManager.getLogger(ProvaSparqlSelectImpl.class);
-	
-	public ProvaSparqlSelectImpl(ProvaKnowledgeBase kb) {
-		super(kb, "sparql_select");
-	}
+    private static final Logger log = LogManager.getLogger(ProvaSparqlSelectImpl.class);
+    
+    public ProvaSparqlSelectImpl(ProvaKnowledgeBase kb) {
+        super(kb, "sparql_select");
+    }
 
-	@Override
-	protected boolean processQuery(ProvaPredicate pred, ProvaConstant cqid,
-			RepositoryConnection con, String sparql_query) {
-		
-		// Prepare TupleQuery.
-		TupleQuery q;
-		try {
-			q = con.prepareTupleQuery(QueryLanguage.SPARQL, sparql_query);
-		} catch (Exception e) {
-			log.error("Could not prepare tuple query.");
-			if(log.isDebugEnabled())
-				log.debug("Exception: ", e);
-			return false;
-		}
+    @Override
+    protected boolean processQuery(ProvaPredicate pred, ProvaConstant cqid,
+            RepositoryConnection con, String sparql_query) {
+        
+        // Prepare TupleQuery.
+        TupleQuery q;
+        try {
+            q = con.prepareTupleQuery(QueryLanguage.SPARQL, sparql_query);
+        } catch (Exception e) {
+            log.error("Could not prepare tuple query.");
+            if(log.isDebugEnabled())
+                log.debug("Exception: ", e);
+            return false;
+        }
 
-		// Evaluate TupleQuery.
-		TupleQueryResult result;
-		try {
-			result = q.evaluate();
-		} catch (QueryEvaluationException e) {
-			log.error("Could not evaluate tuple query.");
-			if(log.isDebugEnabled())
-				log.debug("Exception: ", e);
-			return false;
-		}
-		
-		try {
-			// For each result in the result set, add a fact to the KB.
-			while(result.hasNext()) {
-				List<ProvaObject> newterms = new ArrayList<ProvaObject>();
-				Iterator<Binding> it = result.next().iterator();
-				while(it.hasNext()) {
-					Binding b = it.next();
-					// TODO Handle different data types.
-					String val = b.getValue().stringValue();
-					newterms.add(ProvaConstantImpl.create(val));
-				}
-				
-				// Create the sparql_results predicate, but only once.
-				if(pred == null)
-					pred = kb.getOrGeneratePredicate("sparql_results", newterms.size() + 1);
-				addFact(pred, cqid, newterms);
-			}
-		} catch (QueryEvaluationException e) {
-			log.error("Error while fetching tuple query results.");
-			if(log.isDebugEnabled())
-				log.debug("Exception: ", e);
-			return false;
-		}
-		
-		try {
-			result.close();
-		} catch (QueryEvaluationException e) {
-			log.warn("Could not close result set.");
-			if(log.isDebugEnabled())
-				log.debug("Exception: ", e);
-		}
-		
-		return true;
-	}
+        // Evaluate TupleQuery.
+        TupleQueryResult result;
+        try {
+            result = q.evaluate();
+        } catch (QueryEvaluationException e) {
+            log.error("Could not evaluate tuple query.");
+            if(log.isDebugEnabled())
+                log.debug("Exception: ", e);
+            return false;
+        }
+        
+        try {
+            // For each result in the result set, add a fact to the KB.
+            while(result.hasNext()) {
+                List<ProvaObject> newterms = new ArrayList<ProvaObject>();
+                Iterator<Binding> it = result.next().iterator();
+                while(it.hasNext()) {
+                    Binding b = it.next();
+                    // TODO Handle different data types.
+                    String val = b.getValue().stringValue();
+                    newterms.add(ProvaConstantImpl.create(val));
+                }
+                
+                // Create the sparql_results predicate, but only once.
+                if(pred == null)
+                    pred = kb.getOrGeneratePredicate("sparql_results", newterms.size() + 1);
+                addFact(pred, cqid, newterms);
+            }
+        } catch (QueryEvaluationException e) {
+            log.error("Error while fetching tuple query results.");
+            if(log.isDebugEnabled())
+                log.debug("Exception: ", e);
+            return false;
+        }
+        
+        try {
+            result.close();
+        } catch (QueryEvaluationException e) {
+            log.warn("Could not close result set.");
+            if(log.isDebugEnabled())
+                log.debug("Exception: ", e);
+        }
+        
+        return true;
+    }
 
 }

@@ -11,15 +11,15 @@ import ws.prova.agent2.ProvaReagent;
 
 public class ProvaSendMsgImpl extends ProvaBuiltinImpl {
 
-	public ProvaSendMsgImpl(ProvaKnowledgeBase kb) {
-		super(kb,"sendMsg");
-	}
+    public ProvaSendMsgImpl(ProvaKnowledgeBase kb) {
+        super(kb,"sendMsg");
+    }
 
-	@Override
-	public boolean process(ProvaReagent prova, ProvaDerivationNode node,
-			ProvaGoal goal, List<ProvaLiteral> newLiterals, ProvaRule query) {
-		ProvaLiteral literal = goal.getGoal();
-		return prova.getMessenger().sendMsg(literal, newLiterals, query);
-	}
+    @Override
+    public boolean process(ProvaReagent prova, ProvaDerivationNode node,
+            ProvaGoal goal, List<ProvaLiteral> newLiterals, ProvaRule query) {
+        ProvaLiteral literal = goal.getGoal();
+        return prova.getMessenger().sendMsg(literal, newLiterals, query);
+    }
 
 }

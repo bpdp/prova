@@ -10,25 +10,25 @@ import ws.prova.reference2.cache.ProvaCacheStateImpl.ProvaCacheAnswerKey;
 
 public interface ProvaCacheState {
 
-	public Collection<ProvaList> getSolutions();
+    public Collection<ProvaList> getSolutions();
 
-	public void setOpen(boolean open);
+    public void setOpen(boolean open);
 
-	public boolean isOpen();
+    public boolean isOpen();
 
-	public boolean isComplete();
+    public boolean isComplete();
 
-	public ProvaGoal getGoal();
+    public ProvaGoal getGoal();
 
-	public ProvaCacheAnswerKey getCacheAnswerKey(ProvaList literalList,
-			List<ProvaVariable> variables);
+    public ProvaCacheAnswerKey getCacheAnswerKey(ProvaList literalList,
+            List<ProvaVariable> variables);
 
-	boolean addSolution(ProvaCacheAnswerKey key, ProvaList literalList);
+    boolean addSolution(ProvaCacheAnswerKey key, ProvaList literalList);
 
-	public List<ProvaGoal> getGoals();
+    public List<ProvaGoal> getGoals();
 
-	public void addGoal(ProvaGoal goal);
+    public void addGoal(ProvaGoal goal);
 
-	public void markCompletion();
+    public void markCompletion();
 
 }

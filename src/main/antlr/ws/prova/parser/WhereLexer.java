@@ -225,16 +225,16 @@ public class WhereLexer extends Lexer {
 
 
                 switch (alt1) {
-            	case 1 :
-            	    // C:\\workspace35\\prova-2.0-trunk\\src\\main\\antlr\\ws\\prova\\parser\\Where.g:39:10: DIGIT
-            	    {
-            	    mDIGIT(); 
+                case 1 :
+                    // C:\\workspace35\\prova-2.0-trunk\\src\\main\\antlr\\ws\\prova\\parser\\Where.g:39:10: DIGIT
+                    {
+                    mDIGIT(); 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    if ( cnt1 >= 1 ) break loop1;
+                default :
+                    if ( cnt1 >= 1 ) break loop1;
                         EarlyExitException eee =
                             new EarlyExitException(1, input);
                         throw eee;
@@ -267,16 +267,16 @@ public class WhereLexer extends Lexer {
 
 
                         switch (alt2) {
-                    	case 1 :
-                    	    // C:\\workspace35\\prova-2.0-trunk\\src\\main\\antlr\\ws\\prova\\parser\\Where.g:39:22: DIGIT
-                    	    {
-                    	    mDIGIT(); 
+                        case 1 :
+                            // C:\\workspace35\\prova-2.0-trunk\\src\\main\\antlr\\ws\\prova\\parser\\Where.g:39:22: DIGIT
+                            {
+                            mDIGIT(); 
 
-                    	    }
-                    	    break;
+                            }
+                            break;
 
-                    	default :
-                    	    if ( cnt2 >= 1 ) break loop2;
+                        default :
+                            if ( cnt2 >= 1 ) break loop2;
                                 EarlyExitException eee =
                                     new EarlyExitException(2, input);
                                 throw eee;
@@ -318,24 +318,24 @@ public class WhereLexer extends Lexer {
 
 
                 switch (alt4) {
-            	case 1 :
-            	    // C:\\workspace35\\prova-2.0-trunk\\src\\main\\antlr\\ws\\prova\\parser\\Where.g:43:10: ~ ( '\\'' | '\\n' | '\\r' )
-            	    {
-            	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='\uFFFE') ) {
-            	        input.consume();
+                case 1 :
+                    // C:\\workspace35\\prova-2.0-trunk\\src\\main\\antlr\\ws\\prova\\parser\\Where.g:43:10: ~ ( '\\'' | '\\n' | '\\r' )
+                    {
+                    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='\uFFFE') ) {
+                        input.consume();
 
-            	    }
-            	    else {
-            	        MismatchedSetException mse = new MismatchedSetException(null,input);
-            	        recover(mse);
-            	        throw mse;}
+                    }
+                    else {
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;}
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop4;
+                default :
+                    break loop4;
                 }
             } while (true);
 
@@ -507,24 +507,24 @@ public class WhereLexer extends Lexer {
 
 
                 switch (alt7) {
-            	case 1 :
-            	    // C:\\workspace35\\prova-2.0-trunk\\src\\main\\antlr\\ws\\prova\\parser\\Where.g:
-            	    {
-            	    if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
-            	        input.consume();
+                case 1 :
+                    // C:\\workspace35\\prova-2.0-trunk\\src\\main\\antlr\\ws\\prova\\parser\\Where.g:
+                    {
+                    if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
+                        input.consume();
 
-            	    }
-            	    else {
-            	        MismatchedSetException mse = new MismatchedSetException(null,input);
-            	        recover(mse);
-            	        throw mse;}
+                    }
+                    else {
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;}
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    if ( cnt7 >= 1 ) break loop7;
+                default :
+                    if ( cnt7 >= 1 ) break loop7;
                         EarlyExitException eee =
                             new EarlyExitException(7, input);
                         throw eee;
@@ -565,24 +565,24 @@ public class WhereLexer extends Lexer {
 
 
                 switch (alt8) {
-            	case 1 :
-            	    // C:\\workspace35\\prova-2.0-trunk\\src\\main\\antlr\\ws\\prova\\parser\\Where.g:
-            	    {
-            	    if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
-            	        input.consume();
+                case 1 :
+                    // C:\\workspace35\\prova-2.0-trunk\\src\\main\\antlr\\ws\\prova\\parser\\Where.g:
+                    {
+                    if ( (input.LA(1)>='0' && input.LA(1)<='9')||(input.LA(1)>='A' && input.LA(1)<='Z')||input.LA(1)=='_'||(input.LA(1)>='a' && input.LA(1)<='z') ) {
+                        input.consume();
 
-            	    }
-            	    else {
-            	        MismatchedSetException mse = new MismatchedSetException(null,input);
-            	        recover(mse);
-            	        throw mse;}
+                    }
+                    else {
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;}
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop8;
+                default :
+                    break loop8;
                 }
             } while (true);
 

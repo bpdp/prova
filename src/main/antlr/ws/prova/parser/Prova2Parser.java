@@ -169,21 +169,21 @@ public TreeAdaptor getTreeAdaptor() {
                 int alt1=2;
                 alt1 = dfa1.predict(input);
                 switch (alt1) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:89:4: statement
-            	    {
-            	    pushFollow(FOLLOW_statement_in_rulebase343);
-            	    statement1=statement();
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:89:4: statement
+                    {
+                    pushFollow(FOLLOW_statement_in_rulebase343);
+                    statement1=statement();
 
-            	    state._fsp--;
+                    state._fsp--;
 
-            	    stream_statement.add(statement1.getTree());
+                    stream_statement.add(statement1.getTree());
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop1;
+                default :
+                    break loop1;
                 }
             } while (true);
 
@@ -200,18 +200,18 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt2) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:89:15: NEWLINE
-            	    {
-            	    NEWLINE2=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_rulebase346);  
-            	    stream_NEWLINE.add(NEWLINE2);
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:89:15: NEWLINE
+                    {
+                    NEWLINE2=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_rulebase346);  
+                    stream_NEWLINE.add(NEWLINE2);
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop2;
+                default :
+                    break loop2;
                 }
             } while (true);
 
@@ -267,12 +267,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -320,18 +320,18 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt3) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:92:4: NEWLINE
-            	    {
-            	    NEWLINE4=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_statement367);  
-            	    stream_NEWLINE.add(NEWLINE4);
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:92:4: NEWLINE
+                    {
+                    NEWLINE4=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_statement367);  
+                    stream_NEWLINE.add(NEWLINE4);
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop3;
+                default :
+                    break loop3;
                 }
             } while (true);
 
@@ -392,12 +392,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -446,21 +446,21 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt4) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:95:4: NEWLINE
-            	    {
-            	    NEWLINE7=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_end_of_statement389); 
-            	    NEWLINE7_tree = 
-            	    (ProvaAST)adaptor.create(NEWLINE7)
-            	    ;
-            	    adaptor.addChild(root_0, NEWLINE7_tree);
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:95:4: NEWLINE
+                    {
+                    NEWLINE7=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_end_of_statement389); 
+                    NEWLINE7_tree = 
+                    (ProvaAST)adaptor.create(NEWLINE7)
+                    ;
+                    adaptor.addChild(root_0, NEWLINE7_tree);
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop4;
+                default :
+                    break loop4;
                 }
             } while (true);
 
@@ -499,12 +499,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -596,12 +596,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -784,12 +784,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -920,12 +920,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -992,18 +992,18 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt9) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:107:13: NEWLINE
-            	    {
-            	    NEWLINE25=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_query510);  
-            	    stream_NEWLINE.add(NEWLINE25);
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:107:13: NEWLINE
+                    {
+                    NEWLINE25=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_query510);  
+                    stream_NEWLINE.add(NEWLINE25);
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop9;
+                default :
+                    break loop9;
                 }
             } while (true);
 
@@ -1027,18 +1027,18 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt10) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:107:38: NEWLINE
-            	    {
-            	    NEWLINE27=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_query515);  
-            	    stream_NEWLINE.add(NEWLINE27);
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:107:38: NEWLINE
+                    {
+                    NEWLINE27=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_query515);  
+                    stream_NEWLINE.add(NEWLINE27);
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop10;
+                default :
+                    break loop10;
                 }
             } while (true);
 
@@ -1059,18 +1059,18 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt11) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:107:51: NEWLINE
-            	    {
-            	    NEWLINE29=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_query520);  
-            	    stream_NEWLINE.add(NEWLINE29);
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:107:51: NEWLINE
+                    {
+                    NEWLINE29=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_query520);  
+                    stream_NEWLINE.add(NEWLINE29);
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop11;
+                default :
+                    break loop11;
                 }
             } while (true);
 
@@ -1094,18 +1094,18 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt12) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:107:69: NEWLINE
-            	    {
-            	    NEWLINE31=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_query525);  
-            	    stream_NEWLINE.add(NEWLINE31);
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:107:69: NEWLINE
+                    {
+                    NEWLINE31=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_query525);  
+                    stream_NEWLINE.add(NEWLINE31);
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop12;
+                default :
+                    break loop12;
                 }
             } while (true);
 
@@ -1158,12 +1158,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -1215,12 +1215,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -1374,12 +1374,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -1425,49 +1425,49 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt16) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:115:5: annotation ( NEWLINE )*
-            	    {
-            	    pushFollow(FOLLOW_annotation_in_metadata591);
-            	    annotation38=annotation();
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:115:5: annotation ( NEWLINE )*
+                    {
+                    pushFollow(FOLLOW_annotation_in_metadata591);
+                    annotation38=annotation();
 
-            	    state._fsp--;
+                    state._fsp--;
 
-            	    stream_annotation.add(annotation38.getTree());
+                    stream_annotation.add(annotation38.getTree());
 
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:115:16: ( NEWLINE )*
-            	    loop15:
-            	    do {
-            	        int alt15=2;
-            	        int LA15_0 = input.LA(1);
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:115:16: ( NEWLINE )*
+                    loop15:
+                    do {
+                        int alt15=2;
+                        int LA15_0 = input.LA(1);
 
-            	        if ( (LA15_0==NEWLINE) ) {
-            	            alt15=1;
-            	        }
-
-
-            	        switch (alt15) {
-            	    	case 1 :
-            	    	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:115:16: NEWLINE
-            	    	    {
-            	    	    NEWLINE39=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_metadata593);  
-            	    	    stream_NEWLINE.add(NEWLINE39);
+                        if ( (LA15_0==NEWLINE) ) {
+                            alt15=1;
+                        }
 
 
-            	    	    }
-            	    	    break;
+                        switch (alt15) {
+                        case 1 :
+                            // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:115:16: NEWLINE
+                            {
+                            NEWLINE39=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_metadata593);  
+                            stream_NEWLINE.add(NEWLINE39);
 
-            	    	default :
-            	    	    break loop15;
-            	        }
-            	    } while (true);
+
+                            }
+                            break;
+
+                        default :
+                            break loop15;
+                        }
+                    } while (true);
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    if ( cnt16 >= 1 ) break loop16;
+                default :
+                    if ( cnt16 >= 1 ) break loop16;
                         EarlyExitException eee =
                             new EarlyExitException(16, input);
                         throw eee;
@@ -1525,12 +1525,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -1619,25 +1619,25 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                         switch (alt17) {
-                    	case 1 :
-                    	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:119:27: COMMA value
-                    	    {
-                    	    COMMA44=(Token)match(input,COMMA,FOLLOW_COMMA_in_annotation625);  
-                    	    stream_COMMA.add(COMMA44);
+                        case 1 :
+                            // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:119:27: COMMA value
+                            {
+                            COMMA44=(Token)match(input,COMMA,FOLLOW_COMMA_in_annotation625);  
+                            stream_COMMA.add(COMMA44);
 
 
-                    	    pushFollow(FOLLOW_value_in_annotation627);
-                    	    value45=value();
+                            pushFollow(FOLLOW_value_in_annotation627);
+                            value45=value();
 
-                    	    state._fsp--;
+                            state._fsp--;
 
-                    	    stream_value.add(value45.getTree());
+                            stream_value.add(value45.getTree());
 
-                    	    }
-                    	    break;
+                            }
+                            break;
 
-                    	default :
-                    	    break loop17;
+                        default :
+                            break loop17;
                         }
                     } while (true);
 
@@ -1703,12 +1703,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -1848,12 +1848,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -1907,25 +1907,25 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt20) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:126:22: COMMA literal
-            	    {
-            	    COMMA52=(Token)match(input,COMMA,FOLLOW_COMMA_in_literals681);  
-            	    stream_COMMA.add(COMMA52);
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:126:22: COMMA literal
+                    {
+                    COMMA52=(Token)match(input,COMMA,FOLLOW_COMMA_in_literals681);  
+                    stream_COMMA.add(COMMA52);
 
 
-            	    pushFollow(FOLLOW_literal_in_literals683);
-            	    literal53=literal();
+                    pushFollow(FOLLOW_literal_in_literals683);
+                    literal53=literal();
 
-            	    state._fsp--;
+                    state._fsp--;
 
-            	    stream_literal.add(literal53.getTree());
+                    stream_literal.add(literal53.getTree());
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop20;
+                default :
+                    break loop20;
                 }
             } while (true);
 
@@ -1979,12 +1979,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -2056,18 +2056,18 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                         switch (alt21) {
-                    	case 1 :
-                    	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:128:12: NEWLINE
-                    	    {
-                    	    NEWLINE54=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_literal703);  
-                    	    stream_NEWLINE.add(NEWLINE54);
+                        case 1 :
+                            // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:128:12: NEWLINE
+                            {
+                            NEWLINE54=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_literal703);  
+                            stream_NEWLINE.add(NEWLINE54);
 
 
-                    	    }
-                    	    break;
+                            }
+                            break;
 
-                    	default :
-                    	    break loop21;
+                        default :
+                            break loop21;
                         }
                     } while (true);
 
@@ -2188,18 +2188,18 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                         switch (alt24) {
-                    	case 1 :
-                    	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:129:6: NEWLINE
-                    	    {
-                    	    NEWLINE55=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_literal739);  
-                    	    stream_NEWLINE.add(NEWLINE55);
+                        case 1 :
+                            // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:129:6: NEWLINE
+                            {
+                            NEWLINE55=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_literal739);  
+                            stream_NEWLINE.add(NEWLINE55);
 
 
-                    	    }
-                    	    break;
+                            }
+                            break;
 
-                    	default :
-                    	    break loop24;
+                        default :
+                            break loop24;
                         }
                     } while (true);
 
@@ -2320,18 +2320,18 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                         switch (alt27) {
-                    	case 1 :
-                    	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:130:6: NEWLINE
-                    	    {
-                    	    NEWLINE57=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_literal773);  
-                    	    stream_NEWLINE.add(NEWLINE57);
+                        case 1 :
+                            // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:130:6: NEWLINE
+                            {
+                            NEWLINE57=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_literal773);  
+                            stream_NEWLINE.add(NEWLINE57);
 
 
-                    	    }
-                    	    break;
+                            }
+                            break;
 
-                    	default :
-                    	    break loop27;
+                        default :
+                            break loop27;
                         }
                     } while (true);
 
@@ -2421,18 +2421,18 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                         switch (alt29) {
-                    	case 1 :
-                    	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:131:6: NEWLINE
-                    	    {
-                    	    NEWLINE60=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_literal797);  
-                    	    stream_NEWLINE.add(NEWLINE60);
+                        case 1 :
+                            // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:131:6: NEWLINE
+                            {
+                            NEWLINE60=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_literal797);  
+                            stream_NEWLINE.add(NEWLINE60);
 
 
-                    	    }
-                    	    break;
+                            }
+                            break;
 
-                    	default :
-                    	    break loop29;
+                        default :
+                            break loop29;
                         }
                     } while (true);
 
@@ -2488,12 +2488,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -2545,12 +2545,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -2710,12 +2710,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -2820,12 +2820,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -2918,12 +2918,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -3022,18 +3022,18 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt34) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:147:31: NEWLINE
-            	    {
-            	    NEWLINE78=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_list_body914);  
-            	    stream_NEWLINE.add(NEWLINE78);
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:147:31: NEWLINE
+                    {
+                    NEWLINE78=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_list_body914);  
+                    stream_NEWLINE.add(NEWLINE78);
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop34;
+                default :
+                    break loop34;
                 }
             } while (true);
 
@@ -3093,12 +3093,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -3218,12 +3218,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -3312,12 +3312,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -3426,12 +3426,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -3652,12 +3652,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -3738,25 +3738,25 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt42) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:165:20: ',' key_value
-            	    {
-            	    char_literal96=(Token)match(input,COMMA,FOLLOW_COMMA_in_prova_map1049);  
-            	    stream_COMMA.add(char_literal96);
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:165:20: ',' key_value
+                    {
+                    char_literal96=(Token)match(input,COMMA,FOLLOW_COMMA_in_prova_map1049);  
+                    stream_COMMA.add(char_literal96);
 
 
-            	    pushFollow(FOLLOW_key_value_in_prova_map1051);
-            	    key_value97=key_value();
+                    pushFollow(FOLLOW_key_value_in_prova_map1051);
+                    key_value97=key_value();
 
-            	    state._fsp--;
+                    state._fsp--;
 
-            	    stream_key_value.add(key_value97.getTree());
+                    stream_key_value.add(key_value97.getTree());
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop42;
+                default :
+                    break loop42;
                 }
             } while (true);
 
@@ -3812,12 +3812,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -3954,12 +3954,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -4013,18 +4013,18 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt44) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:172:10: NEWLINE
-            	    {
-            	    NEWLINE103=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_terms1106);  
-            	    stream_NEWLINE.add(NEWLINE103);
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:172:10: NEWLINE
+                    {
+                    NEWLINE103=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_terms1106);  
+                    stream_NEWLINE.add(NEWLINE103);
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop44;
+                default :
+                    break loop44;
                 }
             } while (true);
 
@@ -4042,81 +4042,81 @@ public TreeAdaptor getTreeAdaptor() {
                 int alt47=2;
                 alt47 = dfa47.predict(input);
                 switch (alt47) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:172:25: ( NEWLINE )* ',' ( NEWLINE )* term
-            	    {
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:172:25: ( NEWLINE )*
-            	    loop45:
-            	    do {
-            	        int alt45=2;
-            	        int LA45_0 = input.LA(1);
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:172:25: ( NEWLINE )* ',' ( NEWLINE )* term
+                    {
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:172:25: ( NEWLINE )*
+                    loop45:
+                    do {
+                        int alt45=2;
+                        int LA45_0 = input.LA(1);
 
-            	        if ( (LA45_0==NEWLINE) ) {
-            	            alt45=1;
-            	        }
-
-
-            	        switch (alt45) {
-            	    	case 1 :
-            	    	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:172:25: NEWLINE
-            	    	    {
-            	    	    NEWLINE105=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_terms1112);  
-            	    	    stream_NEWLINE.add(NEWLINE105);
+                        if ( (LA45_0==NEWLINE) ) {
+                            alt45=1;
+                        }
 
 
-            	    	    }
-            	    	    break;
-
-            	    	default :
-            	    	    break loop45;
-            	        }
-            	    } while (true);
-
-
-            	    char_literal106=(Token)match(input,COMMA,FOLLOW_COMMA_in_terms1115);  
-            	    stream_COMMA.add(char_literal106);
+                        switch (alt45) {
+                        case 1 :
+                            // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:172:25: NEWLINE
+                            {
+                            NEWLINE105=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_terms1112);  
+                            stream_NEWLINE.add(NEWLINE105);
 
 
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:172:38: ( NEWLINE )*
-            	    loop46:
-            	    do {
-            	        int alt46=2;
-            	        int LA46_0 = input.LA(1);
+                            }
+                            break;
 
-            	        if ( (LA46_0==NEWLINE) ) {
-            	            alt46=1;
-            	        }
+                        default :
+                            break loop45;
+                        }
+                    } while (true);
 
 
-            	        switch (alt46) {
-            	    	case 1 :
-            	    	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:172:38: NEWLINE
-            	    	    {
-            	    	    NEWLINE107=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_terms1117);  
-            	    	    stream_NEWLINE.add(NEWLINE107);
+                    char_literal106=(Token)match(input,COMMA,FOLLOW_COMMA_in_terms1115);  
+                    stream_COMMA.add(char_literal106);
 
 
-            	    	    }
-            	    	    break;
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:172:38: ( NEWLINE )*
+                    loop46:
+                    do {
+                        int alt46=2;
+                        int LA46_0 = input.LA(1);
 
-            	    	default :
-            	    	    break loop46;
-            	        }
-            	    } while (true);
+                        if ( (LA46_0==NEWLINE) ) {
+                            alt46=1;
+                        }
 
 
-            	    pushFollow(FOLLOW_term_in_terms1120);
-            	    term108=term();
+                        switch (alt46) {
+                        case 1 :
+                            // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:172:38: NEWLINE
+                            {
+                            NEWLINE107=(Token)match(input,NEWLINE,FOLLOW_NEWLINE_in_terms1117);  
+                            stream_NEWLINE.add(NEWLINE107);
 
-            	    state._fsp--;
 
-            	    stream_term.add(term108.getTree());
+                            }
+                            break;
 
-            	    }
-            	    break;
+                        default :
+                            break loop46;
+                        }
+                    } while (true);
 
-            	default :
-            	    break loop47;
+
+                    pushFollow(FOLLOW_term_in_terms1120);
+                    term108=term();
+
+                    state._fsp--;
+
+                    stream_term.add(term108.getTree());
+
+                    }
+                    break;
+
+                default :
+                    break loop47;
                 }
             } while (true);
 
@@ -4170,12 +4170,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -4218,21 +4218,21 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt48) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:174:11: term
-            	    {
-            	    pushFollow(FOLLOW_term_in_terms01140);
-            	    term109=term();
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:174:11: term
+                    {
+                    pushFollow(FOLLOW_term_in_terms01140);
+                    term109=term();
 
-            	    state._fsp--;
+                    state._fsp--;
 
-            	    stream_term.add(term109.getTree());
+                    stream_term.add(term109.getTree());
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    if ( cnt48 >= 1 ) break loop48;
+                default :
+                    if ( cnt48 >= 1 ) break loop48;
                         EarlyExitException eee =
                             new EarlyExitException(48, input);
                         throw eee;
@@ -4290,12 +4290,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -4387,12 +4387,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -4453,12 +4453,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -4511,22 +4511,22 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt50) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:182:6: LCWORD DOT
-            	    {
-            	    LCWORD115=(Token)match(input,LCWORD,FOLLOW_LCWORD_in_qualified_java_class1190);  
-            	    stream_LCWORD.add(LCWORD115);
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:182:6: LCWORD DOT
+                    {
+                    LCWORD115=(Token)match(input,LCWORD,FOLLOW_LCWORD_in_qualified_java_class1190);  
+                    stream_LCWORD.add(LCWORD115);
 
 
-            	    DOT116=(Token)match(input,DOT,FOLLOW_DOT_in_qualified_java_class1192);  
-            	    stream_DOT.add(DOT116);
+                    DOT116=(Token)match(input,DOT,FOLLOW_DOT_in_qualified_java_class1192);  
+                    stream_DOT.add(DOT116);
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    if ( cnt50 >= 1 ) break loop50;
+                default :
+                    if ( cnt50 >= 1 ) break loop50;
                         EarlyExitException eee =
                             new EarlyExitException(50, input);
                         throw eee;
@@ -4602,12 +4602,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -4700,12 +4700,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -4798,12 +4798,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -4878,12 +4878,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -5067,12 +5067,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -5128,36 +5128,36 @@ public TreeAdaptor getTreeAdaptor() {
 
 
                 switch (alt54) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:206:15: ( PLUS | MINUS ) aterm
-            	    {
-            	    set137=(Token)input.LT(1);
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:206:15: ( PLUS | MINUS ) aterm
+                    {
+                    set137=(Token)input.LT(1);
 
-            	    if ( input.LA(1)==MINUS||input.LA(1)==PLUS ) {
-            	        input.consume();
-            	        adaptor.addChild(root_0, 
-            	        (ProvaAST)adaptor.create(set137)
-            	        );
-            	        state.errorRecovery=false;
-            	    }
-            	    else {
-            	        MismatchedSetException mse = new MismatchedSetException(null,input);
-            	        throw mse;
-            	    }
+                    if ( input.LA(1)==MINUS||input.LA(1)==PLUS ) {
+                        input.consume();
+                        adaptor.addChild(root_0, 
+                        (ProvaAST)adaptor.create(set137)
+                        );
+                        state.errorRecovery=false;
+                    }
+                    else {
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        throw mse;
+                    }
 
 
-            	    pushFollow(FOLLOW_aterm_in_expr1361);
-            	    aterm138=aterm();
+                    pushFollow(FOLLOW_aterm_in_expr1361);
+                    aterm138=aterm();
 
-            	    state._fsp--;
+                    state._fsp--;
 
-            	    adaptor.addChild(root_0, aterm138.getTree());
+                    adaptor.addChild(root_0, aterm138.getTree());
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop54;
+                default :
+                    break loop54;
                 }
             } while (true);
 
@@ -5174,12 +5174,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -5399,12 +5399,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -5506,12 +5506,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -5586,12 +5586,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -5682,12 +5682,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -5778,12 +5778,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -5835,12 +5835,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -6001,12 +6001,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -6122,12 +6122,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -6316,12 +6316,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -6410,12 +6410,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -6475,12 +6475,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -6659,12 +6659,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -6751,12 +6751,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -6849,12 +6849,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -6988,12 +6988,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -7071,12 +7071,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -7165,12 +7165,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -7304,12 +7304,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -7369,12 +7369,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -7434,12 +7434,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }
@@ -7535,12 +7535,12 @@ public TreeAdaptor getTreeAdaptor() {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (ProvaAST)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return retval;
     }

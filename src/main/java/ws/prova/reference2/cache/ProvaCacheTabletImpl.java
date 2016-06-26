@@ -9,28 +9,28 @@ import ws.prova.kernel2.cache.ProvaGroundKey;
 
 public class ProvaCacheTabletImpl implements ProvaCacheTablet {
 
-	private int arity;
+    private int arity;
 
-	private Map<ProvaGroundKey,ProvaCacheState> cacheStates;
-	
-	public ProvaCacheTabletImpl(int arity) {
-		this.arity = arity;
-		this.cacheStates = new HashMap<ProvaGroundKey,ProvaCacheState>();
-	}
+    private Map<ProvaGroundKey,ProvaCacheState> cacheStates;
+    
+    public ProvaCacheTabletImpl(int arity) {
+        this.arity = arity;
+        this.cacheStates = new HashMap<ProvaGroundKey,ProvaCacheState>();
+    }
 
-	@Override
-	public ProvaCacheState open(Object[] data) {
-		ProvaGroundKey key = new ProvaGroundKeyImpl(data);
-		ProvaCacheState cacheState = cacheStates.get(key);
-		if( cacheState==null ) {
-			cacheState = new ProvaCacheStateImpl();
-			cacheStates.put(key, cacheState);
-		}
-		return cacheState;
-	}
+    @Override
+    public ProvaCacheState open(Object[] data) {
+        ProvaGroundKey key = new ProvaGroundKeyImpl(data);
+        ProvaCacheState cacheState = cacheStates.get(key);
+        if( cacheState==null ) {
+            cacheState = new ProvaCacheStateImpl();
+            cacheStates.put(key, cacheState);
+        }
+        return cacheState;
+    }
 
-	public int getArity() {
-		return this.arity;
-	}
+    public int getArity() {
+        return this.arity;
+    }
 
 }

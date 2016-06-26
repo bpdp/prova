@@ -11,19 +11,19 @@ import ws.prova.agent2.ProvaReagent;
 
 public class ProvaFailImpl extends ProvaBuiltinImpl {
 
-	public ProvaFailImpl(ProvaKnowledgeBase kb) {
-		super(kb,"fail");
-	}
+    public ProvaFailImpl(ProvaKnowledgeBase kb) {
+        super(kb,"fail");
+    }
 
-	@Override
-	public boolean process(ProvaReagent prova, ProvaDerivationNode node,
-			ProvaGoal goal, List<ProvaLiteral> newLiterals, ProvaRule query) {
-		return false;
-	}
+    @Override
+    public boolean process(ProvaReagent prova, ProvaDerivationNode node,
+            ProvaGoal goal, List<ProvaLiteral> newLiterals, ProvaRule query) {
+        return false;
+    }
 
-	@Override
-	public int getArity() {
-		return 0;
-	}
+    @Override
+    public int getArity() {
+        return 0;
+    }
 
 }

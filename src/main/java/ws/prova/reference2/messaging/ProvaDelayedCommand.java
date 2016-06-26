@@ -4,6 +4,6 @@ import ws.prova.agent2.ProvaReagent;
 
 public interface ProvaDelayedCommand {
 
-	public void process(ProvaReagent prova);
+    public void process(ProvaReagent prova);
 
 }

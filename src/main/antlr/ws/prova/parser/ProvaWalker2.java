@@ -1,34 +1,34 @@
 // $ANTLR 3.4 C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g 2013-01-02 17:05:40
 
-	package ws.prova.parser;
-	import java.util.List;
-	import java.util.ArrayList;
-	import java.util.Arrays;
-	import java.util.Set;
-	import java.util.HashSet;
-	import java.util.Map;
-	import java.util.HashMap;
-	
-	import ws.prova.util2.ProvaClassUtils;
-	import ws.prova.kernel2.ProvaObject;
-	import ws.prova.kernel2.ProvaConstant;
-	import ws.prova.kernel2.ProvaVariable;
-	import ws.prova.kernel2.ProvaList;
-	import ws.prova.kernel2.ProvaLiteral;
-	import ws.prova.kernel2.ProvaRule;
-	import ws.prova.kernel2.ProvaResultSet;
-	import ws.prova.reference2.ProvaConstantImpl;
-	import ws.prova.reference2.ProvaVariableImpl;
-	import ws.prova.reference2.ProvaMapImpl;
-	import ws.prova.reference2.ProvaListImpl;
-	import ws.prova.reference2.ProvaLiteralImpl;
-	import ws.prova.reference2.ProvaRuleImpl;
-	import ws.prova.reference2.ProvaGlobalConstantImpl;
-	import ws.prova.reference2.operators.ProvaOperatorFactoryImpl;
-	import ws.prova.reference2.operators.ProvaBinaryOperatorFactoryImpl;
-	import ws.prova.parser2.ProvaParserImpl;
+    package ws.prova.parser;
+    import java.util.List;
+    import java.util.ArrayList;
+    import java.util.Arrays;
+    import java.util.Set;
+    import java.util.HashSet;
+    import java.util.Map;
+    import java.util.HashMap;
+    
+    import ws.prova.util2.ProvaClassUtils;
+    import ws.prova.kernel2.ProvaObject;
+    import ws.prova.kernel2.ProvaConstant;
+    import ws.prova.kernel2.ProvaVariable;
+    import ws.prova.kernel2.ProvaList;
+    import ws.prova.kernel2.ProvaLiteral;
+    import ws.prova.kernel2.ProvaRule;
+    import ws.prova.kernel2.ProvaResultSet;
+    import ws.prova.reference2.ProvaConstantImpl;
+    import ws.prova.reference2.ProvaVariableImpl;
+    import ws.prova.reference2.ProvaMapImpl;
+    import ws.prova.reference2.ProvaListImpl;
+    import ws.prova.reference2.ProvaLiteralImpl;
+    import ws.prova.reference2.ProvaRuleImpl;
+    import ws.prova.reference2.ProvaGlobalConstantImpl;
+    import ws.prova.reference2.operators.ProvaOperatorFactoryImpl;
+    import ws.prova.reference2.operators.ProvaBinaryOperatorFactoryImpl;
+    import ws.prova.parser2.ProvaParserImpl;
 
-	import ws.prova.parser2.ProvaErrorReporter;
+    import ws.prova.parser2.ProvaErrorReporter;
 
 
 import org.antlr.runtime.*;
@@ -147,7 +147,7 @@ public class ProvaWalker2 extends TreeParser {
         }
         
         private org.antlr.runtime.tree.TreeNodeStream getInput() {
-        	return input;
+            return input;
         } 
 
 
@@ -170,7 +170,7 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-        	((rulebase_scope)rulebase_stack.peek()).ret0 = new ArrayList();
+            ((rulebase_scope)rulebase_stack.peek()).ret0 = new ArrayList();
 
         try {
             // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:67:2: ( ^( RULEBASE (s= statement )* ) )
@@ -192,22 +192,22 @@ public class ProvaWalker2 extends TreeParser {
 
 
                     switch (alt1) {
-                	case 1 :
-                	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:67:16: s= statement
-                	    {
-                	    pushFollow(FOLLOW_statement_in_rulebase68);
-                	    s=statement();
+                    case 1 :
+                        // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:67:16: s= statement
+                        {
+                        pushFollow(FOLLOW_statement_in_rulebase68);
+                        s=statement();
 
-                	    state._fsp--;
+                        state._fsp--;
 
 
-                	    ((rulebase_scope)rulebase_stack.peek()).ret0.add(s);
+                        ((rulebase_scope)rulebase_stack.peek()).ret0.add(s);
 
-                	    }
-                	    break;
+                        }
+                        break;
 
-                	default :
-                	    break loop1;
+                    default :
+                        break loop1;
                     }
                 } while (true);
 
@@ -219,7 +219,7 @@ public class ProvaWalker2 extends TreeParser {
             }
 
 
-            	ret = ((rulebase_scope)rulebase_stack.peek()).ret0;
+                ret = ((rulebase_scope)rulebase_stack.peek()).ret0;
 
         }
         catch (RecognitionException re) {
@@ -228,7 +228,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
             rulebase_stack.pop();
         }
         return ret;
@@ -273,7 +273,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -284,7 +284,7 @@ public class ProvaWalker2 extends TreeParser {
         Object[] ret0;
         Set vars;
         // Variables found in the body (as constructed, they may include those also found in the head)
-        	Set bodyVars;
+            Set bodyVars;
         Set headVars;
         Map tailVars;
         Map mapVars;
@@ -311,18 +311,18 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-        	((stat_scope)stat_stack.peek()).ret0 = new Object[7];
-        	((stat_scope)stat_stack.peek()).vars = new HashSet();
-        	((stat_scope)stat_stack.peek()).tailVars = new HashMap();
-        	((stat_scope)stat_stack.peek()).mapVars = new HashMap();
-        	((stat_scope)stat_stack.peek()).bodyVars = new HashSet();
-        	((stat_scope)stat_stack.peek()).headVars = new HashSet();
-        	((stat_scope)stat_stack.peek()).isBody = false;
-        	((stat_scope)stat_stack.peek()).inRest = false;
-        	((stat_scope)stat_stack.peek()).ret0[3] = new HashMap();
-        	((stat_scope)stat_stack.peek()).ret0[4] = new HashMap();
-        	((stat_scope)stat_stack.peek()).objects = ws.prova.parser2.ProvaParserImpl.tlObjects.get();
-        	((stat_scope)stat_stack.peek()).src = ws.prova.parser2.ProvaParserImpl.tlSrc.get();
+            ((stat_scope)stat_stack.peek()).ret0 = new Object[7];
+            ((stat_scope)stat_stack.peek()).vars = new HashSet();
+            ((stat_scope)stat_stack.peek()).tailVars = new HashMap();
+            ((stat_scope)stat_stack.peek()).mapVars = new HashMap();
+            ((stat_scope)stat_stack.peek()).bodyVars = new HashSet();
+            ((stat_scope)stat_stack.peek()).headVars = new HashSet();
+            ((stat_scope)stat_stack.peek()).isBody = false;
+            ((stat_scope)stat_stack.peek()).inRest = false;
+            ((stat_scope)stat_stack.peek()).ret0[3] = new HashMap();
+            ((stat_scope)stat_stack.peek()).ret0[4] = new HashMap();
+            ((stat_scope)stat_stack.peek()).objects = ws.prova.parser2.ProvaParserImpl.tlObjects.get();
+            ((stat_scope)stat_stack.peek()).src = ws.prova.parser2.ProvaParserImpl.tlSrc.get();
 
         try {
             // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:105:2: (c= clause |q= query )
@@ -353,8 +353,8 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                    		((stat_scope)stat_stack.peek()).ret0[2]=c;
-                    	
+                            ((stat_scope)stat_stack.peek()).ret0[2]=c;
+                        
 
                     }
                     break;
@@ -368,17 +368,17 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                    		((stat_scope)stat_stack.peek()).ret0[0] = "";
-                    		((stat_scope)stat_stack.peek()).ret0[1]=ProvaListImpl.emptyRList;
-                    		((stat_scope)stat_stack.peek()).ret0[2]=q;
-                    	
+                            ((stat_scope)stat_stack.peek()).ret0[0] = "";
+                            ((stat_scope)stat_stack.peek()).ret0[1]=ProvaListImpl.emptyRList;
+                            ((stat_scope)stat_stack.peek()).ret0[2]=q;
+                        
 
                     }
                     break;
 
             }
 
-            	ret = Arrays.asList(((stat_scope)stat_stack.peek()).ret0);
+                ret = Arrays.asList(((stat_scope)stat_stack.peek()).ret0);
 
         }
         catch (RecognitionException re) {
@@ -387,7 +387,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
             stat_stack.pop();
         }
         return ret;
@@ -482,14 +482,14 @@ public class ProvaWalker2 extends TreeParser {
 
 
                     ((stat_scope)stat_stack.peek()).ret0[5]=m; ((stat_scope)stat_stack.peek()).ret0[1]=r; ((stat_scope)stat_stack.peek()).ret0[2]=l;
-                    	ProvaLiteral head = ProvaParserImpl.tlKB.get().generateLiteral((String) r.get(0),(ProvaList) r.get(1));
-                    	ProvaLiteral[] body = (l==null) ? new ProvaLiteral[0] : l.toArray(new ProvaLiteral[0]);
-                    	ret = ProvaParserImpl.tlKB.get().generateRule(head,body);
-                          	ret.computeSourceCode();
-                    	ret.setLine(cl.getLine());
-                    	ret.setSrc(Arrays.asList(new Object[] {((stat_scope)stat_stack.peek()).src}));
-                    	ret.addMetadata(m);
-                    	
+                        ProvaLiteral head = ProvaParserImpl.tlKB.get().generateLiteral((String) r.get(0),(ProvaList) r.get(1));
+                        ProvaLiteral[] body = (l==null) ? new ProvaLiteral[0] : l.toArray(new ProvaLiteral[0]);
+                        ret = ProvaParserImpl.tlKB.get().generateRule(head,body);
+                            ret.computeSourceCode();
+                        ret.setLine(cl.getLine());
+                        ret.setSrc(Arrays.asList(new Object[] {((stat_scope)stat_stack.peek()).src}));
+                        ret.addMetadata(m);
+                        
 
                     }
                     break;
@@ -563,23 +563,23 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                    	List rel = new ArrayList();
-                    	((stat_scope)stat_stack.peek()).ret0[5]=m; ((stat_scope)stat_stack.peek()).ret0[1]=rel; ((stat_scope)stat_stack.peek()).ret0[2]=l;
-                    	rel.add(pred.toString());
-                    	ProvaObject p = params;
-                    	if( params.getFixed().length==1 )
-                    		p = params.getFixed()[0];
-                    	ProvaObject o = result;
-                    	if( result.getFixed().length==1 )
-                    		o = result.getFixed()[0];
-                    	rel.add(ProvaListImpl.create(new ProvaObject[] {p,o},null));
-                    	ProvaLiteral head = ProvaParserImpl.tlKB.get().generateLiteral(pred.toString(),(ProvaList) rel.get(1));
-                    	ProvaLiteral[] body = (l==null) ? new ProvaLiteral[0] : l.toArray(new ProvaLiteral[0]);
-                    	ret = ProvaParserImpl.tlKB.get().generateRule(head,body);
-                    	ret.setLine(cl.getLine());
-                    	ret.setSrc(Arrays.asList(new Object[] {((stat_scope)stat_stack.peek()).src}));
-                    	ret.addMetadata(m);
-                    	
+                        List rel = new ArrayList();
+                        ((stat_scope)stat_stack.peek()).ret0[5]=m; ((stat_scope)stat_stack.peek()).ret0[1]=rel; ((stat_scope)stat_stack.peek()).ret0[2]=l;
+                        rel.add(pred.toString());
+                        ProvaObject p = params;
+                        if( params.getFixed().length==1 )
+                            p = params.getFixed()[0];
+                        ProvaObject o = result;
+                        if( result.getFixed().length==1 )
+                            o = result.getFixed()[0];
+                        rel.add(ProvaListImpl.create(new ProvaObject[] {p,o},null));
+                        ProvaLiteral head = ProvaParserImpl.tlKB.get().generateLiteral(pred.toString(),(ProvaList) rel.get(1));
+                        ProvaLiteral[] body = (l==null) ? new ProvaLiteral[0] : l.toArray(new ProvaLiteral[0]);
+                        ret = ProvaParserImpl.tlKB.get().generateRule(head,body);
+                        ret.setLine(cl.getLine());
+                        ret.setSrc(Arrays.asList(new Object[] {((stat_scope)stat_stack.peek()).src}));
+                        ret.addMetadata(m);
+                        
 
                     }
                     break;
@@ -592,7 +592,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -610,7 +610,7 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-        	ret = new HashMap<String,List<Object>>();
+            ret = new HashMap<String,List<Object>>();
 
         try {
             // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:153:2: ( ^( METADATA (a= annotation )+ ) )
@@ -632,22 +632,22 @@ public class ProvaWalker2 extends TreeParser {
 
 
                 switch (alt8) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:153:16: a= annotation
-            	    {
-            	    pushFollow(FOLLOW_annotation_in_metadata232);
-            	    a=annotation();
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:153:16: a= annotation
+                    {
+                    pushFollow(FOLLOW_annotation_in_metadata232);
+                    a=annotation();
 
-            	    state._fsp--;
+                    state._fsp--;
 
 
-            	    ret.put(a.get(0).toString(),(List<Object>) a.get(1));
+                    ret.put(a.get(0).toString(),(List<Object>) a.get(1));
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    if ( cnt8 >= 1 ) break loop8;
+                default :
+                    if ( cnt8 >= 1 ) break loop8;
                         EarlyExitException eee =
                             new EarlyExitException(8, input);
                         throw eee;
@@ -668,7 +668,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -694,8 +694,8 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-        	ret = new ArrayList<Object>();
-        	((annotation_scope)annotation_stack.peek()).value = new ArrayList<String>(); 
+            ret = new ArrayList<Object>();
+            ((annotation_scope)annotation_stack.peek()).value = new ArrayList<String>(); 
 
         try {
             // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:167:2: ( ^( ANNOTATION n= LCWORD (v= value )* ) )
@@ -720,22 +720,22 @@ public class ProvaWalker2 extends TreeParser {
 
 
                 switch (alt9) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:167:53: v= value
-            	    {
-            	    pushFollow(FOLLOW_value_in_annotation277);
-            	    v=value();
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:167:53: v= value
+                    {
+                    pushFollow(FOLLOW_value_in_annotation277);
+                    v=value();
 
-            	    state._fsp--;
+                    state._fsp--;
 
 
-            	    ((annotation_scope)annotation_stack.peek()).value.add(v);
+                    ((annotation_scope)annotation_stack.peek()).value.add(v);
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop9;
+                default :
+                    break loop9;
                 }
             } while (true);
 
@@ -746,7 +746,7 @@ public class ProvaWalker2 extends TreeParser {
             }
 
 
-            	ret.add(((annotation_scope)annotation_stack.peek()).value);
+                ret.add(((annotation_scope)annotation_stack.peek()).value);
 
         }
         catch (RecognitionException re) {
@@ -755,7 +755,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
             annotation_stack.pop();
         }
         return ret;
@@ -866,7 +866,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -884,8 +884,8 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-        	ret = new ArrayList<ProvaLiteral>();
-        	((stat_scope)stat_stack.peek()).isBody = true;
+            ret = new ArrayList<ProvaLiteral>();
+            ((stat_scope)stat_stack.peek()).isBody = true;
 
         try {
             // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:182:2: ( ^( LITERAL (l= literal )+ ) )
@@ -907,22 +907,22 @@ public class ProvaWalker2 extends TreeParser {
 
 
                 switch (alt11) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:182:15: l= literal
-            	    {
-            	    pushFollow(FOLLOW_literal_in_literals357);
-            	    l=literal();
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:182:15: l= literal
+                    {
+                    pushFollow(FOLLOW_literal_in_literals357);
+                    l=literal();
 
-            	    state._fsp--;
+                    state._fsp--;
 
 
-            	    ret.add(l);
+                    ret.add(l);
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    if ( cnt11 >= 1 ) break loop11;
+                default :
+                    if ( cnt11 >= 1 ) break loop11;
                         EarlyExitException eee =
                             new EarlyExitException(11, input);
                         throw eee;
@@ -943,7 +943,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -965,7 +965,7 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-        	ret = new ArrayList();
+            ret = new ArrayList();
 
         try {
             // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:189:2: ( ^( FUNCTION_CALL pred= predicate params= list_body (result= list_body )? ) )
@@ -1013,22 +1013,22 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-            		if( Character.isUpperCase(pred.charAt(0)) )
-            			ret.add(ProvaVariableImpl.create(pred));
-            		else
-            			ret.add(ProvaConstantImpl.create(pred));
-            		ProvaObject p = params;
-            		if( params.getFixed().length==1 )
-            			p = params.getFixed()[0];
-            		if( result==null )
-            			ret.add(ProvaListImpl.create(new ProvaObject[] {p,null},null));
-            		else {
-            			ProvaObject o = result;
-            			if( result.getFixed().length==1 )
-            				o = result.getFixed()[0];
-            			ret.add(ProvaListImpl.create(new ProvaObject[] {p,o},null));
-            		}
-            	
+                    if( Character.isUpperCase(pred.charAt(0)) )
+                        ret.add(ProvaVariableImpl.create(pred));
+                    else
+                        ret.add(ProvaConstantImpl.create(pred));
+                    ProvaObject p = params;
+                    if( params.getFixed().length==1 )
+                        p = params.getFixed()[0];
+                    if( result==null )
+                        ret.add(ProvaListImpl.create(new ProvaObject[] {p,null},null));
+                    else {
+                        ProvaObject o = result;
+                        if( result.getFixed().length==1 )
+                            o = result.getFixed()[0];
+                        ret.add(ProvaListImpl.create(new ProvaObject[] {p,o},null));
+                    }
+                
 
             }
 
@@ -1039,7 +1039,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -1163,23 +1163,23 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                    		Object pred = r.get(0);
-                          		if( pred.equals("cache") ) {
-                           			String actualPred = ((ProvaList) ((ProvaList) r.get(1)).getFixed()[0]).getFixed()[0].toString();
-                           			ProvaParserImpl.tlKB.get().addCachePredicate(actualPred);
-                           		}
-                    		ret = ProvaParserImpl.tlKB.get().generateLiteral((String) pred,(ProvaList) r.get(1),g);
-                    		ret.setLine(rel.getLine());
-                    		List<ProvaObject> metaVariables = ret.addMetadata(m);
-                    		if( metaVariables!=null ) {
-                    			metaVariables.add(0,ProvaConstantImpl.create(pred));
-                    			metaVariables.add(1,(ProvaList) r.get(1));
-                    			ProvaList metaList = ProvaListImpl.create( metaVariables );
-                    			ret = ProvaParserImpl.tlKB.get().generateLiteral("metadata",metaList,g);
-                    			ret.setLine(rel.getLine());
-                    			ret.addMetadata(m);
-                    		}
-                    	
+                            Object pred = r.get(0);
+                                if( pred.equals("cache") ) {
+                                    String actualPred = ((ProvaList) ((ProvaList) r.get(1)).getFixed()[0]).getFixed()[0].toString();
+                                    ProvaParserImpl.tlKB.get().addCachePredicate(actualPred);
+                                }
+                            ret = ProvaParserImpl.tlKB.get().generateLiteral((String) pred,(ProvaList) r.get(1),g);
+                            ret.setLine(rel.getLine());
+                            List<ProvaObject> metaVariables = ret.addMetadata(m);
+                            if( metaVariables!=null ) {
+                                metaVariables.add(0,ProvaConstantImpl.create(pred));
+                                metaVariables.add(1,(ProvaList) r.get(1));
+                                ProvaList metaList = ProvaListImpl.create( metaVariables );
+                                ret = ProvaParserImpl.tlKB.get().generateLiteral("metadata",metaList,g);
+                                ret.setLine(rel.getLine());
+                                ret.addMetadata(m);
+                            }
+                        
 
                     }
                     break;
@@ -1245,10 +1245,10 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                    		ret =ProvaParserImpl.tlKB.get().generateLiteral((String) ((ProvaConstant) sa.get(0)).getObject(),(ProvaList) sa.get(1),g);
-                    		ret.setLine(sem.getLine());
-                    		ret.addMetadata(m);
-                    	
+                            ret =ProvaParserImpl.tlKB.get().generateLiteral((String) ((ProvaConstant) sa.get(0)).getObject(),(ProvaList) sa.get(1),g);
+                            ret.setLine(sem.getLine());
+                            ret.addMetadata(m);
+                        
 
                     }
                     break;
@@ -1291,15 +1291,15 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                    		ProvaList argsResult = (ProvaList) f.get(1);
-                    		if( argsResult.getFixed()[1]==null ) {
-                    			// Just a predicate call
-                    			ret =ProvaParserImpl.tlKB.get().generateLiteral((String) ((ProvaConstant) f.get(0)).getObject(), (ProvaList) argsResult.getFixed()[0]);
-                    		} else
-                    			ret =ProvaParserImpl.tlKB.get().generateLiteral((String) ((ProvaConstant) f.get(0)).getObject(), argsResult);
-                    		ret.setLine(fun.getLine());
-                    		ret.addMetadata(m);
-                    	
+                            ProvaList argsResult = (ProvaList) f.get(1);
+                            if( argsResult.getFixed()[1]==null ) {
+                                // Just a predicate call
+                                ret =ProvaParserImpl.tlKB.get().generateLiteral((String) ((ProvaConstant) f.get(0)).getObject(), (ProvaList) argsResult.getFixed()[0]);
+                            } else
+                                ret =ProvaParserImpl.tlKB.get().generateLiteral((String) ((ProvaConstant) f.get(0)).getObject(), argsResult);
+                            ret.setLine(fun.getLine());
+                            ret.addMetadata(m);
+                        
 
                     }
                     break;
@@ -1319,11 +1319,11 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                    		ProvaVariable any1 = ProvaVariableImpl.create();
-                    		ProvaList lany1 = ProvaListImpl.create( new ProvaObject[] {any1});
-                    		ret = ProvaParserImpl.tlKB.get().generateLiteral("cut",lany1);
-                    		ret.setLine(cu.getLine());
-                    	
+                            ProvaVariable any1 = ProvaVariableImpl.create();
+                            ProvaList lany1 = ProvaListImpl.create( new ProvaObject[] {any1});
+                            ret = ProvaParserImpl.tlKB.get().generateLiteral("cut",lany1);
+                            ret.setLine(cu.getLine());
+                        
 
                     }
                     break;
@@ -1336,7 +1336,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -1371,8 +1371,8 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-            		ret = lits;
-            	
+                    ret = lits;
+                
 
             }
 
@@ -1383,7 +1383,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -1409,7 +1409,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ;
     }
@@ -1429,7 +1429,7 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-        	ret = new ArrayList<ProvaObject>();
+            ret = new ArrayList<ProvaObject>();
 
         try {
             // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:266:2: (pjc= predicate_java_call |bo= binary_operation )
@@ -1460,12 +1460,12 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                    			ProvaConstant symbolConstant = (ProvaConstant) pjc.remove(0);
-                    			ProvaList pl = ProvaListImpl.create(pjc.toArray(new ProvaObject[0]));
-                    			String method = symbolConstant.equals("s")?"scalc":"pcalc";
-                    			ret.add(ProvaConstantImpl.create(method));
-                    			ret.add(pl);
-                    		
+                                ProvaConstant symbolConstant = (ProvaConstant) pjc.remove(0);
+                                ProvaList pl = ProvaListImpl.create(pjc.toArray(new ProvaObject[0]));
+                                String method = symbolConstant.equals("s")?"scalc":"pcalc";
+                                ret.add(ProvaConstantImpl.create(method));
+                                ret.add(pl);
+                            
 
                     }
                     break;
@@ -1479,11 +1479,11 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                    			ProvaConstant symbolConstant = (ProvaConstant) bo.remove(0);
-                    			ret.add(symbolConstant);
-                    			ProvaList pl = ProvaListImpl.create(bo.toArray(new ProvaObject[0]));
-                    			ret.add(pl);
-                    		
+                                ProvaConstant symbolConstant = (ProvaConstant) bo.remove(0);
+                                ret.add(symbolConstant);
+                                ProvaList pl = ProvaListImpl.create(bo.toArray(new ProvaObject[0]));
+                                ret.add(pl);
+                            
 
                     }
                     break;
@@ -1496,7 +1496,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -1544,8 +1544,8 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                    			ret =sjc;
-                    		
+                                ret =sjc;
+                            
 
                     }
                     break;
@@ -1559,8 +1559,8 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                    			ret =ijc;
-                    		
+                                ret =ijc;
+                            
 
                     }
                     break;
@@ -1573,7 +1573,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -1615,9 +1615,9 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-            			sc.add(a);
-            			ret = sc;
-            		
+                        sc.add(a);
+                        ret = sc;
+                    
 
             }
 
@@ -1628,7 +1628,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -1746,12 +1746,12 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                            				ret =new java.util.ArrayList<ProvaObject>();
-                            				ret.add(ProvaConstantImpl.create("construct"));
-                            				ret.add(cjc.get(0));
-                            				ret.add(lt);
-                            				ret.add(cjc.get(1));
-                            			
+                                            ret =new java.util.ArrayList<ProvaObject>();
+                                            ret.add(ProvaConstantImpl.create("construct"));
+                                            ret.add(cjc.get(0));
+                                            ret.add(lt);
+                                            ret.add(cjc.get(1));
+                                        
 
                             }
                             break;
@@ -1765,11 +1765,11 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                            				ret =new java.util.ArrayList<ProvaObject>();
-                            				ret.add(ProvaConstantImpl.create("equals"));
-                            				ret.add(lt);
-                            				ret.add(pl);
-                            			
+                                            ret =new java.util.ArrayList<ProvaObject>();
+                                            ret.add(ProvaConstantImpl.create("equals"));
+                                            ret.add(lt);
+                                            ret.add(pl);
+                                        
 
                             }
                             break;
@@ -1783,11 +1783,11 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                            				ret =new java.util.ArrayList<ProvaObject>();
-                            				ret.add(ProvaConstantImpl.create("equals"));
-                            				ret.add(lt);
-                            				ret.add(c);
-                            			
+                                            ret =new java.util.ArrayList<ProvaObject>();
+                                            ret.add(ProvaConstantImpl.create("equals"));
+                                            ret.add(lt);
+                                            ret.add(c);
+                                        
 
                             }
                             break;
@@ -1801,12 +1801,12 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                            				ret =new java.util.ArrayList<ProvaObject>();
-                            				ret.add(ProvaConstantImpl.create("expr_literal"));
-                            				ret.add(ProvaConstantImpl.create(ProvaBinaryOperatorFactoryImpl.create("=")));
-                            				ret.add(lt);
-                            				ret.add(e);
-                            			
+                                            ret =new java.util.ArrayList<ProvaObject>();
+                                            ret.add(ProvaConstantImpl.create("expr_literal"));
+                                            ret.add(ProvaConstantImpl.create(ProvaBinaryOperatorFactoryImpl.create("=")));
+                                            ret.add(lt);
+                                            ret.add(e);
+                                        
 
                             }
                             break;
@@ -1832,11 +1832,11 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                    			ret =new java.util.ArrayList<ProvaObject>();
-                    			ret.add(ProvaConstantImpl.create("ne"));
-                    			ret.add(lt);
-                    			ret.add(c);
-                    		
+                                ret =new java.util.ArrayList<ProvaObject>();
+                                ret.add(ProvaConstantImpl.create("ne"));
+                                ret.add(lt);
+                                ret.add(c);
+                            
 
                     }
                     break;
@@ -1856,12 +1856,12 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                    			ret =new java.util.ArrayList<ProvaObject>();
-                    			ret.add(ProvaConstantImpl.create("expr_literal"));
-                    			ret.add(ProvaConstantImpl.create(ProvaBinaryOperatorFactoryImpl.create(bo)));
-                    			ret.add(lt);
-                    			ret.add(e);
-                    		
+                                ret =new java.util.ArrayList<ProvaObject>();
+                                ret.add(ProvaConstantImpl.create("expr_literal"));
+                                ret.add(ProvaConstantImpl.create(ProvaBinaryOperatorFactoryImpl.create(bo)));
+                                ret.add(lt);
+                                ret.add(e);
+                            
 
                     }
                     break;
@@ -1878,7 +1878,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
             binary_operation_stack.pop();
         }
         return ret;
@@ -1900,8 +1900,8 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-        	List<String> ops = new ArrayList<String>();
-        	List<ProvaObject> other = new ArrayList<ProvaObject>();
+            List<String> ops = new ArrayList<String>();
+            List<ProvaObject> other = new ArrayList<ProvaObject>();
 
         try {
             // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:364:2: (a= aterm (op= ( PLUS | MINUS ) b= aterm )* )
@@ -1925,49 +1925,49 @@ public class ProvaWalker2 extends TreeParser {
 
 
                 switch (alt23) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:365:11: op= ( PLUS | MINUS ) b= aterm
-            	    {
-            	    op=(CommonTree)input.LT(1);
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:365:11: op= ( PLUS | MINUS ) b= aterm
+                    {
+                    op=(CommonTree)input.LT(1);
 
-            	    if ( input.LA(1)==MINUS||input.LA(1)==PLUS ) {
-            	        input.consume();
-            	        state.errorRecovery=false;
-            	    }
-            	    else {
-            	        MismatchedSetException mse = new MismatchedSetException(null,input);
-            	        throw mse;
-            	    }
-
-
-            	    pushFollow(FOLLOW_aterm_in_expr768);
-            	    b=aterm();
-
-            	    state._fsp--;
+                    if ( input.LA(1)==MINUS||input.LA(1)==PLUS ) {
+                        input.consume();
+                        state.errorRecovery=false;
+                    }
+                    else {
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        throw mse;
+                    }
 
 
-            	    ops.add(op.toString()); other.add(b);
+                    pushFollow(FOLLOW_aterm_in_expr768);
+                    b=aterm();
 
-            	    }
-            	    break;
+                    state._fsp--;
 
-            	default :
-            	    break loop23;
+
+                    ops.add(op.toString()); other.add(b);
+
+                    }
+                    break;
+
+                default :
+                    break loop23;
                 }
             } while (true);
 
 
 
-            		final int len = ops==null ? 0 : ops.size();
-            		for( int i=0; i<len; i++ ) {
-            			List list = new ArrayList();
-            			list.add(ProvaConstantImpl.create(ProvaOperatorFactoryImpl.create(ops.get(i))));
-            			list.add(a);
-            			list.add(other.get(i));
-            			a = ProvaListImpl.create(list);
-            		}
-            		ret = a;
-            	
+                    final int len = ops==null ? 0 : ops.size();
+                    for( int i=0; i<len; i++ ) {
+                        List list = new ArrayList();
+                        list.add(ProvaConstantImpl.create(ProvaOperatorFactoryImpl.create(ops.get(i))));
+                        list.add(a);
+                        list.add(other.get(i));
+                        a = ProvaListImpl.create(list);
+                    }
+                    ret = a;
+                
 
             }
 
@@ -1978,7 +1978,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -2205,44 +2205,44 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-            		if( op==null ) {
-            			if( m==null ) {
-            				if( pjc!=null ) {
-            					List plist = new java.util.ArrayList<ProvaObject>();
-            					plist.add(ProvaConstantImpl.create(ProvaOperatorFactoryImpl.createFunctionCall(pjc.get(0),pjc.get(2))));
-            					plist.add(pjc.get(1));
-            					plist.add(pjc.get(3));
-            					ret = ProvaListImpl.create(plist);
-            				} else
-            					ret = v==null ? (n==null ? e : n) : v;
-            			} else {
-            				List list = new ArrayList();
-            				list.add(ProvaConstantImpl.create(ProvaOperatorFactoryImpl.create("neg")));
-            				if( pjc!=null ) {
-            					List plist = new java.util.ArrayList<ProvaObject>();
-            					plist.add(ProvaConstantImpl.create(ProvaOperatorFactoryImpl.createFunctionCall(pjc.get(0),pjc.get(2))));
-            					plist.add(pjc.get(1));
-            					plist.add(pjc.get(3));
-            					list.add(ProvaListImpl.create(plist));
-            				} else
-            					list.add(v==null ? (n==null ? e : n) : v);
-            				ret = ProvaListImpl.create(list);
-            			}
-            		} else {
-            			List list = new ArrayList();
-            			list.add(ProvaConstantImpl.create(ProvaOperatorFactoryImpl.create(op.getText())));
-            			if( pjc!=null ) {
-            				List plist = new java.util.ArrayList<ProvaObject>();
-            				plist.add(ProvaConstantImpl.create(ProvaOperatorFactoryImpl.createFunctionCall(pjc.get(0),pjc.get(2))));
-            				plist.add(pjc.get(1));
-            				plist.add(pjc.get(3));
-            				list.add(ProvaListImpl.create(plist));
-            			} else
-            				list.add(v==null ? (n==null ? e : n) : v);
-            			list.add(a);
-            			ret = ProvaListImpl.create(list);
-            		}
-            	
+                    if( op==null ) {
+                        if( m==null ) {
+                            if( pjc!=null ) {
+                                List plist = new java.util.ArrayList<ProvaObject>();
+                                plist.add(ProvaConstantImpl.create(ProvaOperatorFactoryImpl.createFunctionCall(pjc.get(0),pjc.get(2))));
+                                plist.add(pjc.get(1));
+                                plist.add(pjc.get(3));
+                                ret = ProvaListImpl.create(plist);
+                            } else
+                                ret = v==null ? (n==null ? e : n) : v;
+                        } else {
+                            List list = new ArrayList();
+                            list.add(ProvaConstantImpl.create(ProvaOperatorFactoryImpl.create("neg")));
+                            if( pjc!=null ) {
+                                List plist = new java.util.ArrayList<ProvaObject>();
+                                plist.add(ProvaConstantImpl.create(ProvaOperatorFactoryImpl.createFunctionCall(pjc.get(0),pjc.get(2))));
+                                plist.add(pjc.get(1));
+                                plist.add(pjc.get(3));
+                                list.add(ProvaListImpl.create(plist));
+                            } else
+                                list.add(v==null ? (n==null ? e : n) : v);
+                            ret = ProvaListImpl.create(list);
+                        }
+                    } else {
+                        List list = new ArrayList();
+                        list.add(ProvaConstantImpl.create(ProvaOperatorFactoryImpl.create(op.getText())));
+                        if( pjc!=null ) {
+                            List plist = new java.util.ArrayList<ProvaObject>();
+                            plist.add(ProvaConstantImpl.create(ProvaOperatorFactoryImpl.createFunctionCall(pjc.get(0),pjc.get(2))));
+                            plist.add(pjc.get(1));
+                            plist.add(pjc.get(3));
+                            list.add(ProvaListImpl.create(plist));
+                        } else
+                            list.add(v==null ? (n==null ? e : n) : v);
+                        list.add(a);
+                        ret = ProvaListImpl.create(list);
+                    }
+                
 
             }
 
@@ -2253,7 +2253,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -2326,7 +2326,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -2347,7 +2347,7 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-        	ret = new ArrayList<ProvaObject>();
+            ret = new ArrayList<ProvaObject>();
 
         try {
             // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:428:2: ( (qjc= qualified_java_class |o= UCWORD ) a= args )
@@ -2390,11 +2390,11 @@ public class ProvaWalker2 extends TreeParser {
                     o=(CommonTree)match(input,UCWORD,FOLLOW_UCWORD_in_constructor_java_call902); 
 
 
-                    			Class<?> type = ProvaClassUtils.findClass((String) o.toString());
-                    			if( type==null )
-                    				throw new MismatchedTreeNodeException(0,getInput());
-                    			ret.add(ProvaConstantImpl.create(type));
-                    			
+                                Class<?> type = ProvaClassUtils.findClass((String) o.toString());
+                                if( type==null )
+                                    throw new MismatchedTreeNodeException(0,getInput());
+                                ret.add(ProvaConstantImpl.create(type));
+                                
 
                     }
                     break;
@@ -2409,8 +2409,8 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-            			ret.add(a);
-            		
+                        ret.add(a);
+                    
 
             }
 
@@ -2421,7 +2421,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -2551,7 +2551,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -2585,7 +2585,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ;
     }
@@ -2627,9 +2627,9 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-            			ic.add(a);
-            			ret = ic;
-            		
+                        ic.add(a);
+                        ret = ic;
+                    
 
             }
 
@@ -2640,7 +2640,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -2659,8 +2659,8 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-        	ret = new ArrayList();
-        	((stat_scope)stat_stack.peek()).inInstanceCall = true;
+            ret = new ArrayList();
+            ((stat_scope)stat_stack.peek()).inInstanceCall = true;
 
         try {
             // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:468:2: (v= variable l= LCWORD )
@@ -2675,19 +2675,19 @@ public class ProvaWalker2 extends TreeParser {
             l=(CommonTree)match(input,LCWORD,FOLLOW_LCWORD_in_instance_call1038); 
 
 
-            			// Prefix set to "" to signal that the predicate_java_call is an instance one
-            			//   but can be reclassified as a static call if v is a constant
-            			//   representing a class from a default package java.lang or ws.prova
-            			String s = (v instanceof ProvaVariable || v instanceof ProvaGlobalConstantImpl || (v instanceof ProvaConstant && !(((ProvaConstant) v).getObject() instanceof Class<?>)))?"":"s";
-            			ret.add(ProvaConstantImpl.create(s));
-            			ret.add(v);
-            			ret.add(ProvaConstantImpl.create((l!=null?l.getText():null)));
-            		
+                        // Prefix set to "" to signal that the predicate_java_call is an instance one
+                        //   but can be reclassified as a static call if v is a constant
+                        //   representing a class from a default package java.lang or ws.prova
+                        String s = (v instanceof ProvaVariable || v instanceof ProvaGlobalConstantImpl || (v instanceof ProvaConstant && !(((ProvaConstant) v).getObject() instanceof Class<?>)))?"":"s";
+                        ret.add(ProvaConstantImpl.create(s));
+                        ret.add(v);
+                        ret.add(ProvaConstantImpl.create((l!=null?l.getText():null)));
+                    
 
             }
 
 
-            	((stat_scope)stat_stack.peek()).inInstanceCall = false;
+                ((stat_scope)stat_stack.peek()).inInstanceCall = false;
 
         }
         catch (RecognitionException re) {
@@ -2696,7 +2696,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -2715,7 +2715,7 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-        	ret = new ArrayList<ProvaObject>();
+            ret = new ArrayList<ProvaObject>();
 
         try {
             // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:483:2: (qjc= qualified_java_class l= LCWORD )
@@ -2730,11 +2730,11 @@ public class ProvaWalker2 extends TreeParser {
             l=(CommonTree)match(input,LCWORD,FOLLOW_LCWORD_in_static_call1065); 
 
 
-            			// Prefix set to "s" to signal that the predicate_java_call is a static one
-            			ret.add(ProvaConstantImpl.create("s"));
-            			ret.add(qjc);
-            			ret.add(ProvaConstantImpl.create((l!=null?l.getText():null)));
-            		
+                        // Prefix set to "s" to signal that the predicate_java_call is a static one
+                        ret.add(ProvaConstantImpl.create("s"));
+                        ret.add(qjc);
+                        ret.add(ProvaConstantImpl.create((l!=null?l.getText():null)));
+                    
 
             }
 
@@ -2745,7 +2745,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -2783,7 +2783,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -2825,16 +2825,16 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-            			ProvaLiteral q=ProvaParserImpl.tlKB.get().generateLiteral((String) r.get(0),(ProvaList) r.get(1));
-            			if( qp.equals("eval") ) {
-            				ret = new ProvaRuleImpl( new ProvaLiteral[] {q});
-            				ProvaLiteral fail = ProvaParserImpl.tlKB.get().generateLiteral("fail");
-            				ret.addBodyLiteral(fail);
-            			} else if( qp.equals("solve") ) {
-            				ProvaResultSet resultSet = ProvaParserImpl.tlRS.get();
-            				ret =ProvaParserImpl.tlKB.get().generateSolveGoal(resultSet, new ProvaLiteral[] {q});
-            			} else throw new RuntimeException();
-            		
+                        ProvaLiteral q=ProvaParserImpl.tlKB.get().generateLiteral((String) r.get(0),(ProvaList) r.get(1));
+                        if( qp.equals("eval") ) {
+                            ret = new ProvaRuleImpl( new ProvaLiteral[] {q});
+                            ProvaLiteral fail = ProvaParserImpl.tlKB.get().generateLiteral("fail");
+                            ret.addBodyLiteral(fail);
+                        } else if( qp.equals("solve") ) {
+                            ProvaResultSet resultSet = ProvaParserImpl.tlRS.get();
+                            ret =ProvaParserImpl.tlKB.get().generateSolveGoal(resultSet, new ProvaLiteral[] {q});
+                        } else throw new RuntimeException();
+                    
 
             }
 
@@ -2845,7 +2845,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -2865,7 +2865,7 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-        	ret = new ArrayList();
+            ret = new ArrayList();
 
         try {
             // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:513:2: ( ^( PREDICATE p= predicate l= list_body ) )
@@ -2890,12 +2890,12 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-            			if( Character.isUpperCase(p.charAt(0)) )
-            				ret.add(ProvaVariableImpl.create(p));
-            			else
-            				ret.add(p);
-            			ret.add(l);
-            		
+                        if( Character.isUpperCase(p.charAt(0)) )
+                            ret.add(ProvaVariableImpl.create(p));
+                        else
+                            ret.add(p);
+                        ret.add(l);
+                    
 
             }
 
@@ -2906,7 +2906,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -2994,7 +2994,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -3055,8 +3055,8 @@ public class ProvaWalker2 extends TreeParser {
                     l=(CommonTree)match(input,LCWORD,FOLLOW_LCWORD_in_func1199); 
 
 
-                    			ret =ProvaConstantImpl.create(l.toString());
-                    		
+                                ret =ProvaConstantImpl.create(l.toString());
+                            
 
                     }
                     break;
@@ -3066,8 +3066,8 @@ public class ProvaWalker2 extends TreeParser {
                     u=(CommonTree)match(input,UCWORD,FOLLOW_UCWORD_in_func1209); 
 
 
-                    			ret =ProvaVariableImpl.create(u.toString());
-                    		
+                                ret =ProvaVariableImpl.create(u.toString());
+                            
 
                     }
                     break;
@@ -3081,8 +3081,8 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                    			ret =ProvaConstantImpl.create(s);
-                    		
+                                ret =ProvaConstantImpl.create(s);
+                            
 
                     }
                     break;
@@ -3096,8 +3096,8 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                    			ret =tv;
-                    		
+                                ret =tv;
+                            
 
                     }
                     break;
@@ -3110,7 +3110,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -3195,15 +3195,15 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-             			if( t==null ) {
-             				if( lt==null )
-            	 				ret = ProvaListImpl.emptyRList;
-            	 			else
-            					ret = ProvaListImpl.create(new ProvaObject[0],lt);
-             			} else
-            				ret = ProvaListImpl.create(t.toArray(new ProvaObject[0]),lt);
-            			// TODO: deal with the case when t is not ComplexTerm
-             		
+                        if( t==null ) {
+                            if( lt==null )
+                                ret = ProvaListImpl.emptyRList;
+                            else
+                                ret = ProvaListImpl.create(new ProvaObject[0],lt);
+                        } else
+                            ret = ProvaListImpl.create(t.toArray(new ProvaObject[0]),lt);
+                        // TODO: deal with the case when t is not ComplexTerm
+                    
 
             }
 
@@ -3214,7 +3214,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
             list_body_stack.pop();
         }
         return ret;
@@ -3233,7 +3233,7 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-        	ret = new ArrayList<ProvaObject>();
+            ret = new ArrayList<ProvaObject>();
 
         try {
             // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:573:2: ( ^( TERM (t= term )+ ) )
@@ -3255,22 +3255,22 @@ public class ProvaWalker2 extends TreeParser {
 
 
                 switch (alt35) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:573:12: t= term
-            	    {
-            	    pushFollow(FOLLOW_term_in_terms1297);
-            	    t=term();
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:573:12: t= term
+                    {
+                    pushFollow(FOLLOW_term_in_terms1297);
+                    t=term();
 
-            	    state._fsp--;
+                    state._fsp--;
 
 
-            	    ret.add(t);
+                    ret.add(t);
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    if ( cnt35 >= 1 ) break loop35;
+                default :
+                    if ( cnt35 >= 1 ) break loop35;
                         EarlyExitException eee =
                             new EarlyExitException(35, input);
                         throw eee;
@@ -3291,7 +3291,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -3365,7 +3365,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -3490,7 +3490,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -3515,7 +3515,7 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-        	((binary_operation_scope)binary_operation_stack.peek()).op ="";
+            ((binary_operation_scope)binary_operation_stack.peek()).op ="";
 
         try {
             // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:598:2: ( ( (m= MINUS )? (c= constant |v= variable ) ) |n= number |p= prova_list )
@@ -3680,7 +3680,7 @@ public class ProvaWalker2 extends TreeParser {
             }
 
             if(m!=null )
-            	((binary_operation_scope)binary_operation_stack.peek()).op ="minus";
+                ((binary_operation_scope)binary_operation_stack.peek()).op ="minus";
 
         }
         catch (RecognitionException re) {
@@ -3689,7 +3689,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -3715,7 +3715,7 @@ public class ProvaWalker2 extends TreeParser {
         CommonTree u=null;
 
 
-        	((qualified_java_class_scope)qualified_java_class_stack.peek()).s = "";
+            ((qualified_java_class_scope)qualified_java_class_stack.peek()).s = "";
 
         try {
             // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:615:2: ( ^( QUALIFIED_JAVA_CLASS ( (l= LCWORD d= DOT ) )+ u= UCWORD ) )
@@ -3737,26 +3737,26 @@ public class ProvaWalker2 extends TreeParser {
 
 
                 switch (alt41) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:615:28: (l= LCWORD d= DOT )
-            	    {
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:615:28: (l= LCWORD d= DOT )
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:615:29: l= LCWORD d= DOT
-            	    {
-            	    l=(CommonTree)match(input,LCWORD,FOLLOW_LCWORD_in_qualified_java_class1491); 
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:615:28: (l= LCWORD d= DOT )
+                    {
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:615:28: (l= LCWORD d= DOT )
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:615:29: l= LCWORD d= DOT
+                    {
+                    l=(CommonTree)match(input,LCWORD,FOLLOW_LCWORD_in_qualified_java_class1491); 
 
-            	    d=(CommonTree)match(input,DOT,FOLLOW_DOT_in_qualified_java_class1495); 
+                    d=(CommonTree)match(input,DOT,FOLLOW_DOT_in_qualified_java_class1495); 
 
-            	    }
+                    }
 
 
-            	    ((qualified_java_class_scope)qualified_java_class_stack.peek()).s+=l.toString()+d.toString();
+                    ((qualified_java_class_scope)qualified_java_class_stack.peek()).s+=l.toString()+d.toString();
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    if ( cnt41 >= 1 ) break loop41;
+                default :
+                    if ( cnt41 >= 1 ) break loop41;
                         EarlyExitException eee =
                             new EarlyExitException(41, input);
                         throw eee;
@@ -3771,16 +3771,16 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-            			((qualified_java_class_scope)qualified_java_class_stack.peek()).s+=u.toString();
-            		
+                        ((qualified_java_class_scope)qualified_java_class_stack.peek()).s+=u.toString();
+                    
 
             }
 
 
-            	Class type = ProvaClassUtils.findClass((String) ((qualified_java_class_scope)qualified_java_class_stack.peek()).s);
-            	if( type==null )
-            		throw new MismatchedTreeNodeException(0,getInput());
-            	ret =ProvaConstantImpl.create(/*((qualified_java_class_scope)qualified_java_class_stack.peek()).s*/type);
+                Class type = ProvaClassUtils.findClass((String) ((qualified_java_class_scope)qualified_java_class_stack.peek()).s);
+                if( type==null )
+                    throw new MismatchedTreeNodeException(0,getInput());
+                ret =ProvaConstantImpl.create(/*((qualified_java_class_scope)qualified_java_class_stack.peek()).s*/type);
 
         }
         catch (RecognitionException re) {
@@ -3789,7 +3789,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
             qualified_java_class_stack.pop();
         }
         return ret;
@@ -3826,12 +3826,12 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-            			List<ProvaObject> fixed = new ArrayList<ProvaObject>();
-            			fixed.add(f);
-            			fixed.addAll(Arrays.asList(a.getFixed()));
-            			ret=ProvaListImpl.create((ProvaObject[]) fixed.toArray(new ProvaObject[0]),a.getTail());
-            //			ret =reagent.cplx(reagent.flist,a,f);
-            		
+                        List<ProvaObject> fixed = new ArrayList<ProvaObject>();
+                        fixed.add(f);
+                        fixed.addAll(Arrays.asList(a.getFixed()));
+                        ret=ProvaListImpl.create((ProvaObject[]) fixed.toArray(new ProvaObject[0]),a.getTail());
+            //          ret =reagent.cplx(reagent.flist,a,f);
+                    
 
             }
 
@@ -3842,7 +3842,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -3969,16 +3969,16 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                    			Class<?> type = (Class<?>) q.getObject();
-                    			Object field = null;
-                    			try {
-                    				field = type.getField(w.toString()).get(null);
-                    			} catch( Exception e1 ) {}
-                    			if( field!=null )
-                    				ret =ProvaConstantImpl.create(field);
-                    			else
-                    				ret =ProvaVariableImpl.create(w.toString(),type);
-                    		
+                                Class<?> type = (Class<?>) q.getObject();
+                                Object field = null;
+                                try {
+                                    field = type.getField(w.toString()).get(null);
+                                } catch( Exception e1 ) {}
+                                if( field!=null )
+                                    ret =ProvaConstantImpl.create(field);
+                                else
+                                    ret =ProvaVariableImpl.create(w.toString(),type);
+                            
 
                     }
                     break;
@@ -3996,24 +3996,24 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                    			try {
-                    				Class<?> type = ProvaClassUtils.findClass("ws.prova."+u.toString());
-                    				if( type==null ) {
-                    					type = ProvaClassUtils.findClass("java.lang."+u.toString());
-                    					if( type==null )
-                    						throw new MismatchedTreeNodeException(0,getInput());
-                    				}
-                    				Object field;
-                    				try {
-                    					field = type.getField(l.toString()).get(null);
-                    				} catch( Exception e1 ) {
-                    					throw new MismatchedTreeNodeException(0,getInput());
-                    				}
-                    				ret =ProvaConstantImpl.create(field);
-                    			} catch( Exception e ) {
-                    				throw new MismatchedTreeNodeException(0,getInput());
-                    			}
-                    		
+                                try {
+                                    Class<?> type = ProvaClassUtils.findClass("ws.prova."+u.toString());
+                                    if( type==null ) {
+                                        type = ProvaClassUtils.findClass("java.lang."+u.toString());
+                                        if( type==null )
+                                            throw new MismatchedTreeNodeException(0,getInput());
+                                    }
+                                    Object field;
+                                    try {
+                                        field = type.getField(l.toString()).get(null);
+                                    } catch( Exception e1 ) {
+                                        throw new MismatchedTreeNodeException(0,getInput());
+                                    }
+                                    ret =ProvaConstantImpl.create(field);
+                                } catch( Exception e ) {
+                                    throw new MismatchedTreeNodeException(0,getInput());
+                                }
+                            
 
                     }
                     break;
@@ -4031,25 +4031,25 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                    			try {
-                    				Class<?> type = ProvaClassUtils.findClass("ws.prova."+u.toString());
-                    				if( type==null ) {
-                    					type = ProvaClassUtils.findClass("java.lang."+u.toString());
-                    					if( type==null )
-                    						throw new MismatchedTreeNodeException(0,getInput());
-                    				}
-                    				Object field = null;
-                    				try {
-                    					field = type.getField(w.toString()).get(null);
-                    				} catch( Exception e1 ) {}
-                    				if( field!=null )
-                    					ret =ProvaConstantImpl.create(field);
-                    				else
-                    					ret =ProvaVariableImpl.create(w.toString(),type);
-                    			} catch( Exception e ) {
-                    				throw new MismatchedTreeNodeException(0,getInput());
-                    			}
-                    		
+                                try {
+                                    Class<?> type = ProvaClassUtils.findClass("ws.prova."+u.toString());
+                                    if( type==null ) {
+                                        type = ProvaClassUtils.findClass("java.lang."+u.toString());
+                                        if( type==null )
+                                            throw new MismatchedTreeNodeException(0,getInput());
+                                    }
+                                    Object field = null;
+                                    try {
+                                        field = type.getField(w.toString()).get(null);
+                                    } catch( Exception e1 ) {}
+                                    if( field!=null )
+                                        ret =ProvaConstantImpl.create(field);
+                                    else
+                                        ret =ProvaVariableImpl.create(w.toString(),type);
+                                } catch( Exception e ) {
+                                    throw new MismatchedTreeNodeException(0,getInput());
+                                }
+                            
 
                     }
                     break;
@@ -4062,7 +4062,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -4106,7 +4106,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -4124,7 +4124,7 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-        	Map<String,Object> map = new HashMap<String,Object>();
+            Map<String,Object> map = new HashMap<String,Object>();
 
         try {
             // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:696:2: ( ^( PROVA_MAP (kv= key_value )* ) )
@@ -4146,22 +4146,22 @@ public class ProvaWalker2 extends TreeParser {
 
 
                     switch (alt44) {
-                	case 1 :
-                	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:696:17: kv= key_value
-                	    {
-                	    pushFollow(FOLLOW_key_value_in_prova_map1658);
-                	    kv=key_value();
+                    case 1 :
+                        // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:696:17: kv= key_value
+                        {
+                        pushFollow(FOLLOW_key_value_in_prova_map1658);
+                        kv=key_value();
 
-                	    state._fsp--;
+                        state._fsp--;
 
 
-                	    map.put(kv.get(0).toString(),kv.get(1));
+                        map.put(kv.get(0).toString(),kv.get(1));
 
-                	    }
-                	    break;
+                        }
+                        break;
 
-                	default :
-                	    break loop44;
+                    default :
+                        break loop44;
                     }
                 } while (true);
 
@@ -4173,7 +4173,7 @@ public class ProvaWalker2 extends TreeParser {
             }
 
 
-            	ret = ProvaMapImpl.create(map);
+                ret = ProvaMapImpl.create(map);
 
         }
         catch (RecognitionException re) {
@@ -4182,7 +4182,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -4202,7 +4202,7 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-        	ret = new ArrayList<Object>();
+            ret = new ArrayList<Object>();
 
         try {
             // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:703:2: ( ^( KEY_VALUE (k= mstring v= term ) ) )
@@ -4243,7 +4243,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -4302,13 +4302,13 @@ public class ProvaWalker2 extends TreeParser {
                     u=(CommonTree)match(input,UCWORD,FOLLOW_UCWORD_in_variable1722); 
 
 
-                    //			// Allow class lookup from pseudo-instance call
-                    //			Class<?> type = ProvaClassUtils.findClass("java.lang."+u);
-                    //			if( type!=null )
-                    //				ret =ProvaConstantImpl.create(type);
-                    //			else
-                    			ret =ProvaVariableImpl.create(u.toString());
-                    		
+                    //          // Allow class lookup from pseudo-instance call
+                    //          Class<?> type = ProvaClassUtils.findClass("java.lang."+u);
+                    //          if( type!=null )
+                    //              ret =ProvaConstantImpl.create(type);
+                    //          else
+                                ret =ProvaVariableImpl.create(u.toString());
+                            
 
                     }
                     break;
@@ -4318,11 +4318,11 @@ public class ProvaWalker2 extends TreeParser {
                     usw=(CommonTree)match(input,USWORD,FOLLOW_USWORD_in_variable1732); 
 
 
-                    			if( usw.toString().length()==1 )
-                    				ret =ProvaVariableImpl.create(usw.toString());
-                    			else
-                    				ret =ProvaConstantImpl.create(ProvaParserImpl.tlObjects.get()[Integer.parseInt(usw.toString().substring(1))]);
-                    		
+                                if( usw.toString().length()==1 )
+                                    ret =ProvaVariableImpl.create(usw.toString());
+                                else
+                                    ret =ProvaConstantImpl.create(ProvaParserImpl.tlObjects.get()[Integer.parseInt(usw.toString().substring(1))]);
+                            
 
                     }
                     break;
@@ -4351,9 +4351,9 @@ public class ProvaWalker2 extends TreeParser {
 
             }
 
-            	if( ret instanceof ProvaVariable ) {
-            		((stat_scope)stat_stack.peek()).vars.add(ret);
-            	}
+                if( ret instanceof ProvaVariable ) {
+                    ((stat_scope)stat_stack.peek()).vars.add(ret);
+                }
 
         }
         catch (RecognitionException re) {
@@ -4362,7 +4362,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -4406,7 +4406,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -4426,7 +4426,7 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-        	((stat_scope)stat_stack.peek()).inRest = true;
+            ((stat_scope)stat_stack.peek()).inRest = true;
 
         try {
             // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\ProvaWalker2.g:742:2: (v= variable |p= prova_list )
@@ -4457,8 +4457,8 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                    			ret =v;
-                    		
+                                ret =v;
+                            
 
                     }
                     break;
@@ -4478,7 +4478,7 @@ public class ProvaWalker2 extends TreeParser {
 
             }
 
-            	((stat_scope)stat_stack.peek()).inRest = false;
+                ((stat_scope)stat_stack.peek()).inRest = false;
 
         }
         catch (RecognitionException re) {
@@ -4487,7 +4487,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -4542,14 +4542,14 @@ public class ProvaWalker2 extends TreeParser {
                     d=(CommonTree)match(input,LCWORD,FOLLOW_LCWORD_in_constant1840); 
 
 
-                    			Object sd = d.toString();
-                    			if( "false".equals(sd) )
-                    				ret =ProvaConstantImpl.create(java.lang.Boolean.FALSE);
-                    			else if ("true".equals(sd) )
-                    				ret =ProvaConstantImpl.create(java.lang.Boolean.TRUE);
-                    			else
-                    				ret =ProvaParserImpl.tlKB.get().generateGlobalConstant((String) sd);
-                    		
+                                Object sd = d.toString();
+                                if( "false".equals(sd) )
+                                    ret =ProvaConstantImpl.create(java.lang.Boolean.FALSE);
+                                else if ("true".equals(sd) )
+                                    ret =ProvaConstantImpl.create(java.lang.Boolean.TRUE);
+                                else
+                                    ret =ProvaParserImpl.tlKB.get().generateGlobalConstant((String) sd);
+                            
 
                     }
                     break;
@@ -4576,13 +4576,13 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-                    			ret = qjc;
-                    			// A minor hack:
-                    			// 	we need the class itself, not its name, to be inserted
-                    			// This is guaranteed to succeed
-                    			//Class type = ProvaClassUtils.findClass((String) qjc.getObject());
-                    			//ret = ProvaConstantImpl.create(type);
-                    		
+                                ret = qjc;
+                                // A minor hack:
+                                //  we need the class itself, not its name, to be inserted
+                                // This is guaranteed to succeed
+                                //Class type = ProvaClassUtils.findClass((String) qjc.getObject());
+                                //ret = ProvaConstantImpl.create(type);
+                            
 
                     }
                     break;
@@ -4595,7 +4595,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -4658,7 +4658,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -4726,7 +4726,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -4818,7 +4818,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -4866,10 +4866,10 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-            			ret =i1.toString()+'.'+i2.toString();
-            			if( e!=null )
-            				ret+=e.toString();
-            		
+                        ret =i1.toString()+'.'+i2.toString();
+                        if( e!=null )
+                            ret+=e.toString();
+                    
 
             }
 
@@ -4880,7 +4880,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }
@@ -4928,16 +4928,16 @@ public class ProvaWalker2 extends TreeParser {
 
 
 
-            			if( m==null ) {
-            				ret =ProvaConstantImpl.create(p);
-            			} else if( p instanceof Integer ) {
-            				ret =ProvaConstantImpl.create(-((Integer) p));
-            			} else if( p instanceof Long ) {
-            				ret =ProvaConstantImpl.create(-((Long) p));
-            			} else if( p instanceof Double ) {
-            				ret =ProvaConstantImpl.create(-((Double) p));
-            			}
-            		
+                        if( m==null ) {
+                            ret =ProvaConstantImpl.create(p);
+                        } else if( p instanceof Integer ) {
+                            ret =ProvaConstantImpl.create(-((Integer) p));
+                        } else if( p instanceof Long ) {
+                            ret =ProvaConstantImpl.create(-((Long) p));
+                        } else if( p instanceof Double ) {
+                            ret =ProvaConstantImpl.create(-((Double) p));
+                        }
+                    
 
             }
 
@@ -4948,7 +4948,7 @@ public class ProvaWalker2 extends TreeParser {
         }
 
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
         return ret;
     }

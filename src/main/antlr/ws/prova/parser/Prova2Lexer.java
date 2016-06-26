@@ -137,7 +137,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "BRA"
@@ -200,7 +200,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "CUT"
@@ -221,7 +221,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "DIV"
@@ -242,7 +242,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "DOT"
@@ -263,7 +263,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "EQUAL"
@@ -286,7 +286,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "GE"
@@ -307,7 +307,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "GT"
@@ -330,7 +330,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "IF"
@@ -351,7 +351,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "KET"
@@ -374,7 +374,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "LE"
@@ -395,7 +395,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "LT"
@@ -416,7 +416,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "MINUS"
@@ -437,7 +437,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "MULT"
@@ -460,7 +460,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "NOT_EQUAL1"
@@ -483,7 +483,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "NOT_EQUAL2"
@@ -504,7 +504,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "OPEN"
@@ -525,7 +525,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "PLUS"
@@ -548,7 +548,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "REM"
@@ -571,7 +571,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__71"
@@ -592,7 +592,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__72"
@@ -613,7 +613,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__73"
@@ -634,7 +634,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__74"
@@ -655,7 +655,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "T__75"
@@ -702,24 +702,24 @@ public class Prova2Lexer extends Lexer {
 
 
                 switch (alt2) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:
-            	    {
-            	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
-            	        input.consume();
-            	    }
-            	    else {
-            	        MismatchedSetException mse = new MismatchedSetException(null,input);
-            	        recover(mse);
-            	        throw mse;
-            	    }
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:
+                    {
+                    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
+                        input.consume();
+                    }
+                    else {
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;
+                    }
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    if ( cnt2 >= 1 ) break loop2;
+                default :
+                    if ( cnt2 >= 1 ) break loop2;
                         EarlyExitException eee =
                             new EarlyExitException(2, input);
                         throw eee;
@@ -734,7 +734,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "EXPONENT"
@@ -760,24 +760,24 @@ public class Prova2Lexer extends Lexer {
 
 
                 switch (alt3) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:
-            	    {
-            	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
-            	        input.consume();
-            	    }
-            	    else {
-            	        MismatchedSetException mse = new MismatchedSetException(null,input);
-            	        recover(mse);
-            	        throw mse;
-            	    }
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:
+                    {
+                    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
+                        input.consume();
+                    }
+                    else {
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;
+                    }
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    if ( cnt3 >= 1 ) break loop3;
+                default :
+                    if ( cnt3 >= 1 ) break loop3;
                         EarlyExitException eee =
                             new EarlyExitException(3, input);
                         throw eee;
@@ -794,7 +794,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "LONG_LITERAL"
@@ -820,24 +820,24 @@ public class Prova2Lexer extends Lexer {
 
 
                 switch (alt4) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:
-            	    {
-            	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
-            	        input.consume();
-            	    }
-            	    else {
-            	        MismatchedSetException mse = new MismatchedSetException(null,input);
-            	        recover(mse);
-            	        throw mse;
-            	    }
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:
+                    {
+                    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
+                        input.consume();
+                    }
+                    else {
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;
+                    }
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    if ( cnt4 >= 1 ) break loop4;
+                default :
+                    if ( cnt4 >= 1 ) break loop4;
                         EarlyExitException eee =
                             new EarlyExitException(4, input);
                         throw eee;
@@ -852,7 +852,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "INT_LITERAL"
@@ -890,24 +890,24 @@ public class Prova2Lexer extends Lexer {
 
 
                         switch (alt5) {
-                    	case 1 :
-                    	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:
-                    	    {
-                    	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '\t')||(input.LA(1) >= '\u000B' && input.LA(1) <= '\f')||(input.LA(1) >= '\u000E' && input.LA(1) <= '\uFFFF') ) {
-                    	        input.consume();
-                    	    }
-                    	    else {
-                    	        MismatchedSetException mse = new MismatchedSetException(null,input);
-                    	        recover(mse);
-                    	        throw mse;
-                    	    }
+                        case 1 :
+                            // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:
+                            {
+                            if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '\t')||(input.LA(1) >= '\u000B' && input.LA(1) <= '\f')||(input.LA(1) >= '\u000E' && input.LA(1) <= '\uFFFF') ) {
+                                input.consume();
+                            }
+                            else {
+                                MismatchedSetException mse = new MismatchedSetException(null,input);
+                                recover(mse);
+                                throw mse;
+                            }
 
 
-                    	    }
-                    	    break;
+                            }
+                            break;
 
-                    	default :
-                    	    break loop5;
+                        default :
+                            break loop5;
                         }
                     } while (true);
 
@@ -962,7 +962,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "NEWLINE"
@@ -988,7 +988,7 @@ public class Prova2Lexer extends Lexer {
 
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "LC"
@@ -1014,7 +1014,7 @@ public class Prova2Lexer extends Lexer {
 
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "UC"
@@ -1039,7 +1039,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "LCWORD"
@@ -1064,7 +1064,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "DOLLARWORD"
@@ -1087,24 +1087,24 @@ public class Prova2Lexer extends Lexer {
 
 
                 switch (alt9) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:
-            	    {
-            	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
-            	        input.consume();
-            	    }
-            	    else {
-            	        MismatchedSetException mse = new MismatchedSetException(null,input);
-            	        recover(mse);
-            	        throw mse;
-            	    }
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:
+                    {
+                    if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
+                        input.consume();
+                    }
+                    else {
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;
+                    }
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop9;
+                default :
+                    break loop9;
                 }
             } while (true);
 
@@ -1114,7 +1114,7 @@ public class Prova2Lexer extends Lexer {
 
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "WORD"
@@ -1132,7 +1132,7 @@ public class Prova2Lexer extends Lexer {
 
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "UNDERSCORE"
@@ -1150,7 +1150,7 @@ public class Prova2Lexer extends Lexer {
 
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "DOLLAR"
@@ -1178,24 +1178,24 @@ public class Prova2Lexer extends Lexer {
 
 
                 switch (alt10) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:
-            	    {
-            	    if ( (input.LA(1) >= '0' && input.LA(1) <= ':')||(input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
-            	        input.consume();
-            	    }
-            	    else {
-            	        MismatchedSetException mse = new MismatchedSetException(null,input);
-            	        recover(mse);
-            	        throw mse;
-            	    }
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:
+                    {
+                    if ( (input.LA(1) >= '0' && input.LA(1) <= ':')||(input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
+                        input.consume();
+                    }
+                    else {
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;
+                    }
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop10;
+                default :
+                    break loop10;
                 }
             } while (true);
 
@@ -1206,7 +1206,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "UCWORD"
@@ -1234,24 +1234,24 @@ public class Prova2Lexer extends Lexer {
 
 
                 switch (alt11) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:
-            	    {
-            	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
-            	        input.consume();
-            	    }
-            	    else {
-            	        MismatchedSetException mse = new MismatchedSetException(null,input);
-            	        recover(mse);
-            	        throw mse;
-            	    }
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:
+                    {
+                    if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
+                        input.consume();
+                    }
+                    else {
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;
+                    }
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop11;
+                default :
+                    break loop11;
                 }
             } while (true);
 
@@ -1262,7 +1262,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "USWORD"
@@ -1303,16 +1303,16 @@ public class Prova2Lexer extends Lexer {
 
 
                 switch (alt12) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:318:40: .
-            	    {
-            	    matchAny(); 
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:318:40: .
+                    {
+                    matchAny(); 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop12;
+                default :
+                    break loop12;
                 }
             } while (true);
 
@@ -1329,7 +1329,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "ML_COMMENT"
@@ -1355,24 +1355,24 @@ public class Prova2Lexer extends Lexer {
 
 
                 switch (alt13) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:
-            	    {
-            	    if ( input.LA(1)=='\t'||input.LA(1)=='\f'||input.LA(1)==' ' ) {
-            	        input.consume();
-            	    }
-            	    else {
-            	        MismatchedSetException mse = new MismatchedSetException(null,input);
-            	        recover(mse);
-            	        throw mse;
-            	    }
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:
+                    {
+                    if ( input.LA(1)=='\t'||input.LA(1)=='\f'||input.LA(1)==' ' ) {
+                        input.consume();
+                    }
+                    else {
+                        MismatchedSetException mse = new MismatchedSetException(null,input);
+                        recover(mse);
+                        throw mse;
+                    }
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    if ( cnt13 >= 1 ) break loop13;
+                default :
+                    if ( cnt13 >= 1 ) break loop13;
                         EarlyExitException eee =
                             new EarlyExitException(13, input);
                         throw eee;
@@ -1389,7 +1389,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "WS"
@@ -1415,7 +1415,7 @@ public class Prova2Lexer extends Lexer {
 
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "DIGIT"
@@ -1442,17 +1442,17 @@ public class Prova2Lexer extends Lexer {
 
 
                 switch (alt14) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:325:16: CLEAN_STRING
-            	    {
-            	    mCLEAN_STRING(); 
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:325:16: CLEAN_STRING
+                    {
+                    mCLEAN_STRING(); 
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop14;
+                default :
+                    break loop14;
                 }
             } while (true);
 
@@ -1469,44 +1469,44 @@ public class Prova2Lexer extends Lexer {
 
 
                 switch (alt16) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:325:31: STRING2 ( CLEAN_STRING )*
-            	    {
-            	    mSTRING2(); 
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:325:31: STRING2 ( CLEAN_STRING )*
+                    {
+                    mSTRING2(); 
 
 
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:325:39: ( CLEAN_STRING )*
-            	    loop15:
-            	    do {
-            	        int alt15=2;
-            	        int LA15_0 = input.LA(1);
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:325:39: ( CLEAN_STRING )*
+                    loop15:
+                    do {
+                        int alt15=2;
+                        int LA15_0 = input.LA(1);
 
-            	        if ( ((LA15_0 >= '\u0000' && LA15_0 <= '!')||(LA15_0 >= '#' && LA15_0 <= '&')||(LA15_0 >= '(' && LA15_0 <= '\uFFFF')) ) {
-            	            alt15=1;
-            	        }
-
-
-            	        switch (alt15) {
-            	    	case 1 :
-            	    	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:325:39: CLEAN_STRING
-            	    	    {
-            	    	    mCLEAN_STRING(); 
+                        if ( ((LA15_0 >= '\u0000' && LA15_0 <= '!')||(LA15_0 >= '#' && LA15_0 <= '&')||(LA15_0 >= '(' && LA15_0 <= '\uFFFF')) ) {
+                            alt15=1;
+                        }
 
 
-            	    	    }
-            	    	    break;
-
-            	    	default :
-            	    	    break loop15;
-            	        }
-            	    } while (true);
+                        switch (alt15) {
+                        case 1 :
+                            // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:325:39: CLEAN_STRING
+                            {
+                            mCLEAN_STRING(); 
 
 
-            	    }
-            	    break;
+                            }
+                            break;
 
-            	default :
-            	    break loop16;
+                        default :
+                            break loop15;
+                        }
+                    } while (true);
+
+
+                    }
+                    break;
+
+                default :
+                    break loop16;
                 }
             } while (true);
 
@@ -1519,7 +1519,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "STRING1"
@@ -1546,17 +1546,17 @@ public class Prova2Lexer extends Lexer {
 
 
                 switch (alt17) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:327:15: CLEAN_STRING
-            	    {
-            	    mCLEAN_STRING(); 
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:327:15: CLEAN_STRING
+                    {
+                    mCLEAN_STRING(); 
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop17;
+                default :
+                    break loop17;
                 }
             } while (true);
 
@@ -1573,44 +1573,44 @@ public class Prova2Lexer extends Lexer {
 
 
                 switch (alt19) {
-            	case 1 :
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:327:30: STRING1 ( CLEAN_STRING )*
-            	    {
-            	    mSTRING1(); 
+                case 1 :
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:327:30: STRING1 ( CLEAN_STRING )*
+                    {
+                    mSTRING1(); 
 
 
-            	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:327:38: ( CLEAN_STRING )*
-            	    loop18:
-            	    do {
-            	        int alt18=2;
-            	        int LA18_0 = input.LA(1);
+                    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:327:38: ( CLEAN_STRING )*
+                    loop18:
+                    do {
+                        int alt18=2;
+                        int LA18_0 = input.LA(1);
 
-            	        if ( ((LA18_0 >= '\u0000' && LA18_0 <= '!')||(LA18_0 >= '#' && LA18_0 <= '&')||(LA18_0 >= '(' && LA18_0 <= '\uFFFF')) ) {
-            	            alt18=1;
-            	        }
-
-
-            	        switch (alt18) {
-            	    	case 1 :
-            	    	    // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:327:38: CLEAN_STRING
-            	    	    {
-            	    	    mCLEAN_STRING(); 
+                        if ( ((LA18_0 >= '\u0000' && LA18_0 <= '!')||(LA18_0 >= '#' && LA18_0 <= '&')||(LA18_0 >= '(' && LA18_0 <= '\uFFFF')) ) {
+                            alt18=1;
+                        }
 
 
-            	    	    }
-            	    	    break;
-
-            	    	default :
-            	    	    break loop18;
-            	        }
-            	    } while (true);
+                        switch (alt18) {
+                        case 1 :
+                            // C:\\home\\kozlenkova\\git\\prova\\src\\main\\antlr\\ws\\prova\\parser\\Prova2.g:327:38: CLEAN_STRING
+                            {
+                            mCLEAN_STRING(); 
 
 
-            	    }
-            	    break;
+                            }
+                            break;
 
-            	default :
-            	    break loop19;
+                        default :
+                            break loop18;
+                        }
+                    } while (true);
+
+
+                    }
+                    break;
+
+                default :
+                    break loop19;
                 }
             } while (true);
 
@@ -1623,7 +1623,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "STRING2"
@@ -1687,7 +1687,7 @@ public class Prova2Lexer extends Lexer {
             state.channel = _channel;
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "CLEAN_STRING"
@@ -1836,7 +1836,7 @@ public class Prova2Lexer extends Lexer {
 
         }
         finally {
-        	// do for sure before leaving
+            // do for sure before leaving
         }
     }
     // $ANTLR end "CHAR_ESC"
@@ -2302,7 +2302,7 @@ public class Prova2Lexer extends Lexer {
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;
-        	int _s = s;
+            int _s = s;
             switch ( s ) {
                     case 0 : 
                         int LA22_0 = input.LA(1);

@@ -5,42 +5,42 @@ import java.util.List;
 
 public interface ProvaGoal {
 
-	public ProvaRule next();
+    public ProvaRule next();
 
-	public ProvaLiteral getGoal();
+    public ProvaLiteral getGoal();
 
-	public ProvaUnification nextUnification(ProvaKnowledgeBase kb);
+    public ProvaUnification nextUnification(ProvaKnowledgeBase kb);
 
-	public ProvaRule getQuery();
+    public ProvaRule getQuery();
 
-	public void setCut(boolean cut);
+    public void setCut(boolean cut);
 
-	public void setGoal(ProvaLiteral top);
+    public void setGoal(ProvaLiteral top);
 
-	public boolean hasNext();
+    public boolean hasNext();
 
-	public Iterator<ProvaRule> getIterator();
+    public Iterator<ProvaRule> getIterator();
 
-	public void addAnswer(ProvaList terms);
+    public void addAnswer(ProvaList terms);
 
-	public void addOuterAnswer(ProvaList terms);
+    public void addOuterAnswer(ProvaList terms);
 
-	public boolean isSingleClause();
+    public boolean isSingleClause();
 
-	public void removeTarget();
+    public void removeTarget();
 
-	public void updateMetadataGoal();
+    public void updateMetadataGoal();
 
-	public Object lookupMetadata(String variable, List<ProvaVariable> variables);
+    public Object lookupMetadata(String variable, List<ProvaVariable> variables);
 
-	public ProvaRule getLastMatch();
-	
-	public void setLastMatch(ProvaRule lastMatch);
+    public ProvaRule getLastMatch();
+    
+    public void setLastMatch(ProvaRule lastMatch);
 
-	boolean isCut();
+    boolean isCut();
 
-	public void update();
+    public void update();
 
-	public void updateGround();
+    public void updateGround();
 
 }

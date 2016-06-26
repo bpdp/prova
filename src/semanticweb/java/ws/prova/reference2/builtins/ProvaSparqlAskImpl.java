@@ -50,44 +50,44 @@ import ws.prova.kernel2.ProvaPredicate;
  */
 public class ProvaSparqlAskImpl extends ProvaSparqlQueryImpl {
 
-	private static final Logger log = LogManager.getLogger(ProvaSparqlAskImpl.class);
-	
-	public ProvaSparqlAskImpl(ProvaKnowledgeBase kb) {
-		super(kb, "sparql_ask");
-	}
+    private static final Logger log = LogManager.getLogger(ProvaSparqlAskImpl.class);
+    
+    public ProvaSparqlAskImpl(ProvaKnowledgeBase kb) {
+        super(kb, "sparql_ask");
+    }
 
-	@Override
-	protected boolean processQuery(ProvaPredicate pred, ProvaConstant cqid,
-			RepositoryConnection con, String sparql_query) {
-		
-		// Prepare BooleanQuery.
-		BooleanQuery q;
-		try {
-			q = con.prepareBooleanQuery(QueryLanguage.SPARQL, sparql_query);
-		} catch (Exception e) {
-			log.error("Could not prepare boolean query.");
-			if(log.isDebugEnabled())
-				log.debug("Exception: ", e);
-			return false;
-		}
-		
-		// Evaluate BooleanQuery.
-		boolean answer;
-		try {
-			answer = q.evaluate();
-		} catch (QueryEvaluationException e) {
-			log.error("Could not evaluate boolean query.");
-			if(log.isDebugEnabled())
-				log.debug("Exception: ", e);
-			return false;
-		}
-		if(answer) {
-			// Create the sparql_results predicate and add the fact to the KB.
-			pred = kb.getOrGeneratePredicate("sparql_results", 1);
-			addFact(pred, cqid, new ArrayList<ProvaObject>());
-		}
-		
-		return true;
-	}
+    @Override
+    protected boolean processQuery(ProvaPredicate pred, ProvaConstant cqid,
+            RepositoryConnection con, String sparql_query) {
+        
+        // Prepare BooleanQuery.
+        BooleanQuery q;
+        try {
+            q = con.prepareBooleanQuery(QueryLanguage.SPARQL, sparql_query);
+        } catch (Exception e) {
+            log.error("Could not prepare boolean query.");
+            if(log.isDebugEnabled())
+                log.debug("Exception: ", e);
+            return false;
+        }
+        
+        // Evaluate BooleanQuery.
+        boolean answer;
+        try {
+            answer = q.evaluate();
+        } catch (QueryEvaluationException e) {
+            log.error("Could not evaluate boolean query.");
+            if(log.isDebugEnabled())
+                log.debug("Exception: ", e);
+            return false;
+        }
+        if(answer) {
+            // Create the sparql_results predicate and add the fact to the KB.
+            pred = kb.getOrGeneratePredicate("sparql_results", 1);
+            addFact(pred, cqid, new ArrayList<ProvaObject>());
+        }
+        
+        return true;
+    }
 
 }

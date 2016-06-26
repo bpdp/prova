@@ -12,84 +12,84 @@ import ws.prova.kernel2.cache.ProvaCacheState;
 
 public interface ProvaKnowledgeBase {
 
-	public ProvaPredicate generatePredicate(String symbol, int arity);
+    public ProvaPredicate generatePredicate(String symbol, int arity);
 
-	public ProvaRuleSet getPredicates(String symbol);
+    public ProvaRuleSet getPredicates(String symbol);
 
-	public ProvaRuleSet getPredicates(String symbol, int arity);
+    public ProvaRuleSet getPredicates(String symbol, int arity);
 
-	public ConcurrentMap<String, ProvaPredicate> getPredicates();
+    public ConcurrentMap<String, ProvaPredicate> getPredicates();
 
-	public ProvaLiteral generateLiteral(String symbol, ProvaList terms);
+    public ProvaLiteral generateLiteral(String symbol, ProvaList terms);
 
-	public ProvaRule generateRule(ProvaLiteral head, ProvaLiteral[] body);
+    public ProvaRule generateRule(ProvaLiteral head, ProvaLiteral[] body);
 
-	public ProvaRule generateGoal(ProvaLiteral[] body);
+    public ProvaRule generateGoal(ProvaLiteral[] body);
 
-	public ProvaLiteral generateLiteral(String symbol);
+    public ProvaLiteral generateLiteral(String symbol);
 
-	public ProvaRule generateRule(ProvaLiteral head, ProvaLiteral[] newGoals,
-			ProvaLiteral[] body, int offset);
+    public ProvaRule generateRule(ProvaLiteral head, ProvaLiteral[] newGoals,
+            ProvaLiteral[] body, int offset);
 
-	public ProvaRule generateRuleA(ProvaLiteral lit, ProvaLiteral[] provaLiterals);
+    public ProvaRule generateRuleA(ProvaLiteral lit, ProvaLiteral[] provaLiterals);
 
-	public ProvaRule generateSolveGoal(ProvaResultSet resultSet, ProvaLiteral[] body);
+    public ProvaRule generateSolveGoal(ProvaResultSet resultSet, ProvaLiteral[] body);
 
-	public ProvaLiteral generateCachedLiteral(String symbol, ProvaList terms,
-			ProvaCacheState cacheState,
-			ws.prova.kernel2.cache.ProvaLocalAnswers answers);
+    public ProvaLiteral generateCachedLiteral(String symbol, ProvaList terms,
+            ProvaCacheState cacheState,
+            ws.prova.kernel2.cache.ProvaLocalAnswers answers);
 
-	public void setPrintWriter(PrintWriter printWriter);
+    public void setPrintWriter(PrintWriter printWriter);
 
-	public PrintWriter getPrintWriter();
+    public PrintWriter getPrintWriter();
 
-	public ProvaConstant getGlobalByName(String name);
+    public ProvaConstant getGlobalByName(String name);
 
-	public ProvaConstant generateGlobalConstant(String name);
+    public ProvaConstant generateGlobalConstant(String name);
 
-	public void setGlobalConstant(String name, Object value);
+    public void setGlobalConstant(String name, Object value);
 
-	public void setGlobals(Map<String, Object> globals);
+    public void setGlobals(Map<String, Object> globals);
 
-	public List<ProvaSolution[]> consultSyncInternal(ProvaReagent prova, String src, String key,
-			Object[] objects);
+    public List<ProvaSolution[]> consultSyncInternal(ProvaReagent prova, String src, String key,
+            Object[] objects);
 
-	public List<ProvaSolution[]> consultSyncInternal(ProvaReagent prova,
-			BufferedReader in, String key, Object[] objects);
+    public List<ProvaSolution[]> consultSyncInternal(ProvaReagent prova,
+            BufferedReader in, String key, Object[] objects);
 
-	public ProvaLiteral generateHeadLiteral(String symbol, ProvaList terms);
+    public ProvaLiteral generateHeadLiteral(String symbol, ProvaList terms);
 
-	public ProvaLiteral generateLiteral(String symbol, ProvaObject[] data, int offset);
+    public ProvaLiteral generateLiteral(String symbol, ProvaObject[] data, int offset);
 
-	public ProvaLiteral generateLiteral(ProvaObject[] data);
+    public ProvaLiteral generateLiteral(ProvaObject[] data);
 
-	public void addCachePredicate(String symbol);
+    public void addCachePredicate(String symbol);
 
-	public boolean isCachePredicate(String symbol);
+    public boolean isCachePredicate(String symbol);
 
-	public ProvaLiteral generateLiteral(String symbol,
-			ProvaList terms, List<ProvaLiteral> guard);
+    public ProvaLiteral generateLiteral(String symbol,
+            ProvaList terms, List<ProvaLiteral> guard);
 
-	public ProvaPredicate getOrGeneratePredicate(String symbol, int arity);
+    public ProvaPredicate getOrGeneratePredicate(String symbol, int arity);
 
-	public ProvaPredicate getPredicate(String symbol, int arity);
+    public ProvaPredicate getPredicate(String symbol, int arity);
 
-	public void addClauseSetToSrc(ProvaRuleSet ruleSet, String src);
+    public void addClauseSetToSrc(ProvaRuleSet ruleSet, String src);
 
-	public void unconsultSync(String src);
+    public void unconsultSync(String src);
 
-	public ProvaRule generateGoal(ProvaLiteral[] body,
-			List<ProvaVariable> variables);
+    public ProvaRule generateGoal(ProvaLiteral[] body,
+            List<ProvaVariable> variables);
 
-	public ProvaRule generateRule(long ruleId, ProvaLiteral head,
-			ProvaLiteral[] body);
+    public ProvaRule generateRule(long ruleId, ProvaLiteral head,
+            ProvaLiteral[] body);
 
-	public ProvaRule generateGoal(ProvaUnification unification, ProvaDerivationNode node, ProvaLiteral[] newGoals,
-			ProvaLiteral[] body, int offset, List<ProvaVariable> variables);
+    public ProvaRule generateGoal(ProvaUnification unification, ProvaDerivationNode node, ProvaLiteral[] newGoals,
+            ProvaLiteral[] body, int offset, List<ProvaVariable> variables);
 
-	public void updateContext(String filename);
+    public void updateContext(String filename);
 
-//	public ProvaRule generateLocalRule(ProvaReagent prova, long partitionKey,
-//			ProvaLiteral head, ProvaLiteral[] array);
+//  public ProvaRule generateLocalRule(ProvaReagent prova, long partitionKey,
+//          ProvaLiteral head, ProvaLiteral[] array);
 
 }

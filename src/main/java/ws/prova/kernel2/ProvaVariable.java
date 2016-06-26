@@ -2,26 +2,26 @@ package ws.prova.kernel2;
 
 public interface ProvaVariable extends ProvaObject, ProvaComputable {
 
-	public Object getName();
+    public Object getName();
 
-	public Class<?> getType();
+    public Class<?> getType();
 
-	public void setAssigned(ProvaObject assigned);
+    public void setAssigned(ProvaObject assigned);
 
-	public String uniqueName();
+    public String uniqueName();
 
-	public int getIndex();
+    public int getIndex();
 
-	public ProvaVariable clone();
+    public ProvaVariable clone();
 
-	public ProvaObject getAssigned();
+    public ProvaObject getAssigned();
 
-	public void setRuleId(long ruleId);
+    public void setRuleId(long ruleId);
 
-	public long getRuleId();
+    public long getRuleId();
 
-	public void setIndex(int size);
+    public void setIndex(int size);
 
-	public ProvaVariable clone(long ruleId);
+    public ProvaVariable clone(long ruleId);
 
 }

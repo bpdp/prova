@@ -7,8 +7,8 @@ import ws.prova.reference2.cache.ProvaCacheStateImpl.ProvaCacheAnswerKey;
 
 public interface ProvaLocalAnswers {
 
-	public boolean addSolution(ProvaCacheAnswerKey key, ProvaList terms);
+    public boolean addSolution(ProvaCacheAnswerKey key, ProvaList terms);
 
-	public Collection<ProvaList> getSolutions();
+    public Collection<ProvaList> getSolutions();
 
 }

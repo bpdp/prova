@@ -6,22 +6,22 @@ import ws.prova.kernel2.ProvaLiteral;
 
 public class ProvaGenerateRuleImpl implements ProvaDelayedCommand {
 
-	private ProvaKnowledgeBase kb;
-	
-	private ProvaLiteral headControl;
+    private ProvaKnowledgeBase kb;
+    
+    private ProvaLiteral headControl;
 
-	private ProvaLiteral[] provaLiterals;
-	
-	public ProvaGenerateRuleImpl(ProvaKnowledgeBase kb, ProvaLiteral headControl,
-			ProvaLiteral[] provaLiterals) {
-		this.kb = kb;
-		this.headControl = headControl;
-		this.provaLiterals = provaLiterals;
-	}
+    private ProvaLiteral[] provaLiterals;
+    
+    public ProvaGenerateRuleImpl(ProvaKnowledgeBase kb, ProvaLiteral headControl,
+            ProvaLiteral[] provaLiterals) {
+        this.kb = kb;
+        this.headControl = headControl;
+        this.provaLiterals = provaLiterals;
+    }
 
-	@Override
-	public synchronized void process(ProvaReagent prova) {
-		kb.generateRule(headControl, provaLiterals);
-	}
+    @Override
+    public synchronized void process(ProvaReagent prova) {
+        kb.generateRule(headControl, provaLiterals);
+    }
 
 }

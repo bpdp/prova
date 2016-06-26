@@ -5,10 +5,10 @@ import ws.prova.kernel2.ProvaRule;
 
 public interface ProvaTarget {
 
-	public ProvaGoal getTarget();
+    public ProvaGoal getTarget();
 
-	public ProvaRule getCandidate();
+    public ProvaRule getCandidate();
 
-	public void setCandidate(ProvaRule candidate);
+    public void setCandidate(ProvaRule candidate);
 
 }

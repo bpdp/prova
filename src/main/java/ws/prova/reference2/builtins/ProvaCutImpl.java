@@ -11,19 +11,19 @@ import ws.prova.agent2.ProvaReagent;
 
 public class ProvaCutImpl extends ProvaBuiltinImpl {
 
-	public ProvaCutImpl(ProvaKnowledgeBase kb, String symbol) {
-		super(kb, symbol);
-	}
+    public ProvaCutImpl(ProvaKnowledgeBase kb, String symbol) {
+        super(kb, symbol);
+    }
 
-	@Override
-	public boolean process(ProvaReagent prova, ProvaDerivationNode node,
-			ProvaGoal goal, List<ProvaLiteral> newLiterals, ProvaRule query) {
-		return false;
-	}
+    @Override
+    public boolean process(ProvaReagent prova, ProvaDerivationNode node,
+            ProvaGoal goal, List<ProvaLiteral> newLiterals, ProvaRule query) {
+        return false;
+    }
 
-	@Override
-	public String getSymbol() {
-		return "cut";
-	}
+    @Override
+    public String getSymbol() {
+        return "cut";
+    }
 
 }

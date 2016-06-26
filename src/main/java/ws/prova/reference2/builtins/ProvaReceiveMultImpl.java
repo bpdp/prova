@@ -11,14 +11,14 @@ import ws.prova.kernel2.ProvaRule;
 
 public class ProvaReceiveMultImpl extends ProvaBuiltinImpl {
 
-	public ProvaReceiveMultImpl(ProvaKnowledgeBase kb) {
-		super(kb,"rcvMult");
-	}
+    public ProvaReceiveMultImpl(ProvaKnowledgeBase kb) {
+        super(kb,"rcvMult");
+    }
 
-	@Override
-	public boolean process(ProvaReagent prova, ProvaDerivationNode node,
-			ProvaGoal goal, List<ProvaLiteral> newLiterals, ProvaRule query) {
-		return prova.getMessenger().rcvMsg(goal, newLiterals, query, true);
-	}
+    @Override
+    public boolean process(ProvaReagent prova, ProvaDerivationNode node,
+            ProvaGoal goal, List<ProvaLiteral> newLiterals, ProvaRule query) {
+        return prova.getMessenger().rcvMsg(goal, newLiterals, query, true);
+    }
 
 }

@@ -4,8 +4,8 @@ import ws.prova.agent2.ProvaReagent;
 
 public interface ProvaResolutionInferenceEngine {
 
-	public ProvaDerivationNode run();
+    public ProvaDerivationNode run();
 
-	public void setReagent(ProvaReagent prova);
+    public void setReagent(ProvaReagent prova);
 
 }

@@ -100,7 +100,7 @@ public class WhereParser extends Parser {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
         finally {
@@ -178,7 +178,7 @@ public class WhereParser extends Parser {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
         finally {
@@ -232,25 +232,25 @@ public class WhereParser extends Parser {
 
 
                 switch (alt1) {
-            	case 1 :
-            	    // C:\\workspace35\\prova-2.0-trunk\\src\\main\\antlr\\ws\\prova\\parser\\Where.g:24:20: 'xor' or_expr
-            	    {
-            	    string_literal6=(Token)match(input,15,FOLLOW_15_in_xor_expr89); 
-            	    string_literal6_tree = (Object)adaptor.create(string_literal6);
-            	    root_0 = (Object)adaptor.becomeRoot(string_literal6_tree, root_0);
+                case 1 :
+                    // C:\\workspace35\\prova-2.0-trunk\\src\\main\\antlr\\ws\\prova\\parser\\Where.g:24:20: 'xor' or_expr
+                    {
+                    string_literal6=(Token)match(input,15,FOLLOW_15_in_xor_expr89); 
+                    string_literal6_tree = (Object)adaptor.create(string_literal6);
+                    root_0 = (Object)adaptor.becomeRoot(string_literal6_tree, root_0);
 
-            	    pushFollow(FOLLOW_or_expr_in_xor_expr92);
-            	    or_expr7=or_expr();
+                    pushFollow(FOLLOW_or_expr_in_xor_expr92);
+                    or_expr7=or_expr();
 
-            	    state._fsp--;
+                    state._fsp--;
 
-            	    adaptor.addChild(root_0, or_expr7.getTree());
+                    adaptor.addChild(root_0, or_expr7.getTree());
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop1;
+                default :
+                    break loop1;
                 }
             } while (true);
 
@@ -266,7 +266,7 @@ public class WhereParser extends Parser {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
         finally {
@@ -320,25 +320,25 @@ public class WhereParser extends Parser {
 
 
                 switch (alt2) {
-            	case 1 :
-            	    // C:\\workspace35\\prova-2.0-trunk\\src\\main\\antlr\\ws\\prova\\parser\\Where.g:26:21: 'or' and_expr
-            	    {
-            	    string_literal9=(Token)match(input,16,FOLLOW_16_in_or_expr106); 
-            	    string_literal9_tree = (Object)adaptor.create(string_literal9);
-            	    root_0 = (Object)adaptor.becomeRoot(string_literal9_tree, root_0);
+                case 1 :
+                    // C:\\workspace35\\prova-2.0-trunk\\src\\main\\antlr\\ws\\prova\\parser\\Where.g:26:21: 'or' and_expr
+                    {
+                    string_literal9=(Token)match(input,16,FOLLOW_16_in_or_expr106); 
+                    string_literal9_tree = (Object)adaptor.create(string_literal9);
+                    root_0 = (Object)adaptor.becomeRoot(string_literal9_tree, root_0);
 
-            	    pushFollow(FOLLOW_and_expr_in_or_expr109);
-            	    and_expr10=and_expr();
+                    pushFollow(FOLLOW_and_expr_in_or_expr109);
+                    and_expr10=and_expr();
 
-            	    state._fsp--;
+                    state._fsp--;
 
-            	    adaptor.addChild(root_0, and_expr10.getTree());
+                    adaptor.addChild(root_0, and_expr10.getTree());
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop2;
+                default :
+                    break loop2;
                 }
             } while (true);
 
@@ -354,7 +354,7 @@ public class WhereParser extends Parser {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
         finally {
@@ -408,25 +408,25 @@ public class WhereParser extends Parser {
 
 
                 switch (alt3) {
-            	case 1 :
-            	    // C:\\workspace35\\prova-2.0-trunk\\src\\main\\antlr\\ws\\prova\\parser\\Where.g:28:21: 'and' not_expr
-            	    {
-            	    string_literal12=(Token)match(input,17,FOLLOW_17_in_and_expr121); 
-            	    string_literal12_tree = (Object)adaptor.create(string_literal12);
-            	    root_0 = (Object)adaptor.becomeRoot(string_literal12_tree, root_0);
+                case 1 :
+                    // C:\\workspace35\\prova-2.0-trunk\\src\\main\\antlr\\ws\\prova\\parser\\Where.g:28:21: 'and' not_expr
+                    {
+                    string_literal12=(Token)match(input,17,FOLLOW_17_in_and_expr121); 
+                    string_literal12_tree = (Object)adaptor.create(string_literal12);
+                    root_0 = (Object)adaptor.becomeRoot(string_literal12_tree, root_0);
 
-            	    pushFollow(FOLLOW_not_expr_in_and_expr124);
-            	    not_expr13=not_expr();
+                    pushFollow(FOLLOW_not_expr_in_and_expr124);
+                    not_expr13=not_expr();
 
-            	    state._fsp--;
+                    state._fsp--;
 
-            	    adaptor.addChild(root_0, not_expr13.getTree());
+                    adaptor.addChild(root_0, not_expr13.getTree());
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop3;
+                default :
+                    break loop3;
                 }
             } while (true);
 
@@ -442,7 +442,7 @@ public class WhereParser extends Parser {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
         finally {
@@ -582,7 +582,7 @@ public class WhereParser extends Parser {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
         finally {
@@ -655,7 +655,7 @@ public class WhereParser extends Parser {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
         finally {
@@ -727,21 +727,21 @@ public class WhereParser extends Parser {
 
 
                 switch (alt6) {
-            	case 1 :
-            	    // C:\\workspace35\\prova-2.0-trunk\\src\\main\\antlr\\ws\\prova\\parser\\Where.g:36:28: ',' T
-            	    {
-            	    char_literal25=(Token)match(input,20,FOLLOW_20_in_in193);  
-            	    stream_20.add(char_literal25);
+                case 1 :
+                    // C:\\workspace35\\prova-2.0-trunk\\src\\main\\antlr\\ws\\prova\\parser\\Where.g:36:28: ',' T
+                    {
+                    char_literal25=(Token)match(input,20,FOLLOW_20_in_in193);  
+                    stream_20.add(char_literal25);
 
-            	    T26=(Token)match(input,T,FOLLOW_T_in_in195);  
-            	    stream_T.add(T26);
+                    T26=(Token)match(input,T,FOLLOW_T_in_in195);  
+                    stream_T.add(T26);
 
 
-            	    }
-            	    break;
+                    }
+                    break;
 
-            	default :
-            	    break loop6;
+                default :
+                    break loop6;
                 }
             } while (true);
 
@@ -794,7 +794,7 @@ public class WhereParser extends Parser {
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
-    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+        retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
         finally {

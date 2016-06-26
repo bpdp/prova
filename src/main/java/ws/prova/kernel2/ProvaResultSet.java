@@ -7,12 +7,12 @@ import ws.prova.parser2.ProvaParsingException;
 
 public interface ProvaResultSet {
 
-	public void add(ProvaSolution solution);
+    public void add(ProvaSolution solution);
 
-	public Vector<ProvaSolution> getSolutions();
+    public Vector<ProvaSolution> getSolutions();
 
-	ProvaParsingException getException();
+    ProvaParsingException getException();
 
-	void setException(ProvaParsingException pex);
+    void setException(ProvaParsingException pex);
 
 }

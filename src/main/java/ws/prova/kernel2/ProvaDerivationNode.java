@@ -9,28 +9,28 @@ public interface ProvaDerivationNode {
 
     public void setFailed(boolean b);
 
-	public void setQuery(ProvaRule goalRule);
+    public void setQuery(ProvaRule goalRule);
 
-	public void setId(int next);
+    public void setId(int next);
 
-	public void setCut(boolean b);
+    public void setCut(boolean b);
 
-	public ProvaRule getQuery();
+    public ProvaRule getQuery();
 
-	public boolean isCut();
+    public boolean isCut();
 
-	public void setCutPredicate(int intValue);
+    public void setCutPredicate(int intValue);
 
-	public void setCurrentGoal(ProvaGoal goal);
+    public void setCurrentGoal(ProvaGoal goal);
 
-	public int getCutPredicate();
+    public int getCutPredicate();
 
-	public int getId();
+    public int getId();
 
-	public void setParent(ProvaDerivationNode n);
+    public void setParent(ProvaDerivationNode n);
 
-	public ProvaDerivationNode getParent();
+    public ProvaDerivationNode getParent();
 
-	public ProvaGoal getCurrentGoal();
+    public ProvaGoal getCurrentGoal();
 
 }

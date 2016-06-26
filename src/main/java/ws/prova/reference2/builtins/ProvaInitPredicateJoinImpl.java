@@ -11,15 +11,15 @@ import ws.prova.agent2.ProvaReagent;
 
 public class ProvaInitPredicateJoinImpl extends ProvaBuiltinImpl {
 
-	public ProvaInitPredicateJoinImpl(ProvaKnowledgeBase kb) {
-		super(kb,"init_predicate_join");
-	}
+    public ProvaInitPredicateJoinImpl(ProvaKnowledgeBase kb) {
+        super(kb,"init_predicate_join");
+    }
 
-	@Override
-	public boolean process(ProvaReagent prova, ProvaDerivationNode node,
-			ProvaGoal goal, List<ProvaLiteral> newLiterals, ProvaRule query) {
-		ProvaLiteral literal = goal.getGoal();
-		return prova.getWorkflows().init_predicate_join(literal, newLiterals, query);
-	}
+    @Override
+    public boolean process(ProvaReagent prova, ProvaDerivationNode node,
+            ProvaGoal goal, List<ProvaLiteral> newLiterals, ProvaRule query) {
+        ProvaLiteral literal = goal.getGoal();
+        return prova.getWorkflows().init_predicate_join(literal, newLiterals, query);
+    }
 
 }

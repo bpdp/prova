@@ -8,51 +8,51 @@ import ws.prova.kernel2.cache.ProvaLocalAnswers;
 
 public interface ProvaLiteral extends ProvaObject {
 
-	public ProvaPredicate getPredicate();
+    public ProvaPredicate getPredicate();
 
-	public ProvaList getTerms();
+    public ProvaList getTerms();
 
-	public ProvaLiteral rebuild(final ProvaUnification unification);
+    public ProvaLiteral rebuild(final ProvaUnification unification);
 
-	public ProvaLiteral rebuildSource(final ProvaUnification unification);
+    public ProvaLiteral rebuildSource(final ProvaUnification unification);
 
-	public void addClause(ProvaRule clause);
+    public void addClause(ProvaRule clause);
 
-	public void addClauseA(ProvaRule clause);
+    public void addClauseA(ProvaRule clause);
 
-	public void setGoal(ProvaGoal provaGoal);
+    public void setGoal(ProvaGoal provaGoal);
 
-	public ProvaCacheState getCacheState();
+    public ProvaCacheState getCacheState();
 
-	public ProvaLocalAnswers getAnswers();
+    public ProvaLocalAnswers getAnswers();
 
-	public void markCompletion();
+    public void markCompletion();
 
-	public ProvaGoal getGoal();
+    public ProvaGoal getGoal();
 
-	public String getSourceCode();
+    public String getSourceCode();
 
-	public void setSourceCode(String string);
+    public void setSourceCode(String string);
 
-	public void setMetadata(String property, List<Object> value);
+    public void setMetadata(String property, List<Object> value);
 
-	public List<Object> getMetadata(String property);
+    public List<Object> getMetadata(String property);
 
-	public List<ProvaObject> addMetadata(Map<String, List<Object>> m);
+    public List<ProvaObject> addMetadata(Map<String, List<Object>> m);
 
-	public Map<String, List<Object>> getMetadata();
+    public Map<String, List<Object>> getMetadata();
 
-	public void setLine(int line);
+    public void setLine(int line);
 
-	public int getLine();
+    public int getLine();
 
-	public List<ProvaLiteral> getGuard();
+    public List<ProvaLiteral> getGuard();
 
-	public void setTerms(ProvaList newList);
+    public void setTerms(ProvaList newList);
 
-	public void setGround(boolean ground);
+    public void setGround(boolean ground);
 
-	public ProvaLiteral cloneWithBoundVariables(ProvaUnification unification,
-			List<ProvaVariable> variables, List<Boolean> isConstant);
+    public ProvaLiteral cloneWithBoundVariables(ProvaUnification unification,
+            List<ProvaVariable> variables, List<Boolean> isConstant);
 
 }

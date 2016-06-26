@@ -6,31 +6,31 @@ import java.io.Writer;
 
 public final class ProvaNullWriter extends Writer {
 
-	private static final Writer INSTANCE = new ProvaNullWriter();
+    private static final Writer INSTANCE = new ProvaNullWriter();
 
-	public static final Writer getInstance() {
-		return INSTANCE;
-	}
+    public static final Writer getInstance() {
+        return INSTANCE;
+    }
 
-	private static final PrintWriter PRINTWRITER_INSTANCE = new PrintWriter(new ProvaNullWriter());
+    private static final PrintWriter PRINTWRITER_INSTANCE = new PrintWriter(new ProvaNullWriter());
 
-	public static final PrintWriter getPrintWriter() {
-		return PRINTWRITER_INSTANCE;
-	}
+    public static final PrintWriter getPrintWriter() {
+        return PRINTWRITER_INSTANCE;
+    }
 
-	private ProvaNullWriter() {
+    private ProvaNullWriter() {
 
-	}
+    }
 
-	public void close() throws IOException {
+    public void close() throws IOException {
 
-	}
+    }
 
-	public void flush() throws IOException {
+    public void flush() throws IOException {
 
-	}
+    }
 
-	public void write(char[] cbuf, int off, int len) throws IOException {
+    public void write(char[] cbuf, int off, int len) throws IOException {
 
-	}
+    }
 }

@@ -11,15 +11,15 @@ import ws.prova.agent2.ProvaReagent;
 
 public class ProvaSpawnImpl extends ProvaBuiltinImpl {
 
-	public ProvaSpawnImpl(ProvaKnowledgeBase kb) {
-		super(kb,"spawn");
-	}
+    public ProvaSpawnImpl(ProvaKnowledgeBase kb) {
+        super(kb,"spawn");
+    }
 
-	@Override
-	public boolean process(ProvaReagent prova, ProvaDerivationNode node,
-			ProvaGoal goal, List<ProvaLiteral> newLiterals, ProvaRule query) {
-		ProvaLiteral literal = goal.getGoal();
-		return prova.getMessenger().spawn(literal, newLiterals, query);
-	}
+    @Override
+    public boolean process(ProvaReagent prova, ProvaDerivationNode node,
+            ProvaGoal goal, List<ProvaLiteral> newLiterals, ProvaRule query) {
+        ProvaLiteral literal = goal.getGoal();
+        return prova.getMessenger().spawn(literal, newLiterals, query);
+    }
 
 }

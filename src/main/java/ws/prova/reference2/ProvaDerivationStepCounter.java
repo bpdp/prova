@@ -28,15 +28,15 @@ package ws.prova.reference2;
  *        Prova complete re-write
  */
 final class ProvaDerivationStepCounter {
-	int count = 0;
+    int count = 0;
 
-	/**
-	 * Increase the counter.
-	 *
-	 * @return the current count
-	 */
-	int next() {
-		count++;
-		return count;
-	}
+    /**
+     * Increase the counter.
+     *
+     * @return the current count
+     */
+    int next() {
+        count++;
+        return count;
+    }
 }

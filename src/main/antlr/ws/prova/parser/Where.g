@@ -6,7 +6,7 @@ options {
 }
 
 tokens {
-	IN;
+    IN;
 }
 
 @parser::header {
@@ -19,42 +19,42 @@ tokens {
 
 expr  :  xor_expr;
 
-par_expr:	'(' expr ')' -> expr;
+par_expr:   '(' expr ')' -> expr;
 
-xor_expr:	or_expr ('xor'^ or_expr)*;
-	
-or_expr :	and_expr ('or'^ and_expr)*;
+xor_expr:   or_expr ('xor'^ or_expr)*;
+    
+or_expr :   and_expr ('or'^ and_expr)*;
 
-and_expr:	not_expr ('and'^ not_expr)*;
+and_expr:   not_expr ('and'^ not_expr)*;
 
-not_expr:	('not'^)? (par_expr | comparison | in );
+not_expr:   ('not'^)? (par_expr | comparison | in );
 
 comparison
- 	:	Identifier (Comparison^ (Identifier | T));
-	
+    :   Identifier (Comparison^ (Identifier | T));
+    
 in
- 	:	Identifier 'in' '(' T (',' T)* ')' -> ^(IN Identifier T+);
+    :   Identifier 'in' '(' T (',' T)* ')' -> ^(IN Identifier T+);
 
 fragment
-Number	:	DIGIT+ ('.' DIGIT+)?;
+Number  :   DIGIT+ ('.' DIGIT+)?;
 
 fragment
 String 
-	:	'\'' (~('\'' | '\n' | '\r'))* '\'';
+    :   '\'' (~('\'' | '\n' | '\r'))* '\'';
 
-T	:	String | Number;
+T   :   String | Number;
 
 Comparison
    : '!=' |  '<' | '<=' | '>=' | '>';
 
-WhiteSpace	
+WhiteSpace  
    :  (' ' | '\t' | '\n' | '\r')+ { skip(); };
 
 Identifier
    :  CHAR (CHAR | DIGIT)*;
-	
+    
 fragment
-CHAR	:	'a'..'z' | 'A'..'Z' | '_';
-	
+CHAR    :   'a'..'z' | 'A'..'Z' | '_';
+    
 fragment
-DIGIT	:	'0'..'9';
+DIGIT   :   '0'..'9';
